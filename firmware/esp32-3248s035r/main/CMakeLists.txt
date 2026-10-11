@@ -1,0 +1,37 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "board_esp32_3248s035r.c"
+        "xom_firmware.c"
+        "xom_touch.c"
+        "xom_keyboard.c"
+        "xom_widgets.c"
+        "xom_ui_style.c"
+        "xom_ui_feedback.c"
+        "xom_settings.c"
+        "xom_wifi.c"
+        "xom_wifi_ui.c"
+        "xom_time.c"
+        "xom_weather.c"
+        "xom_time_ui.c"
+        "xom_weather_ui.c"
+        "ui_navigation.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        driver
+        esp_lcd
+        esp_lcd_st7796
+        esp_lcd_touch_xpt2046
+        esp_lvgl_port
+        lvgl
+        nvs_flash
+        esp_wifi
+        esp_netif
+        esp_event
+        esp_timer
+        esp_http_client
+        json
+        mbedtls
+        xomcodingui
+)

@@ -1,0 +1,7 @@
+CONFIG_LV_USE_OBJ_NAME=y
+CONFIG_LV_USE_TRANSLATION=y
+
+# XPT2046: report raw 12-bit ADC samples so the firmware can apply its own
+# calibration (see main/xom_touch.c). Without this the driver scales ADC to a
+# fixed screen range and accurate corner calibration is impossible.
+# CONFIG_XPT2046_CONVERT_ADC_TO_COORDS is not set

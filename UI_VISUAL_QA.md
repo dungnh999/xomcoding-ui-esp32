@@ -691,3 +691,204 @@ Ly do:
 | Visual QA moi | NOT PASS |
 
 Can export/codegen thanh cong 76/76 truoc khi tiep tuc build, smoke render va so sanh screenshot.
+
+---
+
+# Task 11.3 - Visual QA sau codegen 76/76
+
+Ngay cap nhat: 2026-10-11
+
+## Ket qua codegen/build/render
+
+Sau GUI export moi nhat, project da co codegen that:
+
+| Hang muc | Ket qua |
+|---|---:|
+| XML source | 76 |
+| `_gen.c` | 76 |
+| `_gen.h` | 76 |
+| `file_list_gen.cmake` screen entries | 76 |
+| Simulator Gallery screens | 76 |
+| Screenshot PNG moi | 76 |
+
+Build:
+
+- `lib-ui`: PASS.
+- `lved-runtime`: PASS.
+- Desktop simulator: PASS.
+
+Smoke render:
+
+- Thu muc: `ui-preview-task11-2/generated-76/`
+- PNG: 76/76.
+- Fail: 0.
+
+## Wi-Fi Switch
+
+Da mo screenshot moi:
+
+- `ui-preview-task11-2/generated-76/wifi_portrait.png`
+- `ui-preview-task11-2/generated-76/wifi_landscape.png`
+
+Ket qua:
+
+- Track bo tron dung dang vien thuoc.
+- Knob tron, can giua theo chieu doc.
+- Generated C da dung `LV_PART_MAIN`, `LV_PART_INDICATOR | LV_STATE_CHECKED`, `LV_PART_KNOB`.
+- Radius trong generated C la `999`.
+- Khong thay loi vuong goc nhu screenshot cu.
+
+Trang thai: PASS.
+
+## AI Quota TabView
+
+Da mo screenshot moi:
+
+- `ui-preview-task11-2/generated-76/quota_portrait.png`
+- `ui-preview-task11-2/generated-76/quota_landscape.png`
+
+Ket qua:
+
+- Man render duoc.
+- Noi dung quota, progress bar, reset time va nut Lam moi hien thi.
+- TabView that render duoc.
+- Loi con lai: tab buttons van mau xam sang mac dinh, chua dung theme `#a52a26`/`#172332`.
+
+Nguyen nhan:
+
+- Generated C hien tai chi co `lv_tabview_get_tab_bar(...)` va style container tab bar.
+- Luc export, XML chua co `lv_tabview-tab_button`, nen button style khong duoc sinh vao C.
+
+Da sua XML nguon sau khi phat hien loi:
+
+- `screens/ai/quota_portrait.xml`
+- `screens/ai/quota_landscape.xml`
+
+Noi dung sua:
+
+- Them `lv_tabview-tab_button index="0"` voi nen `0xa52a26`.
+- Them `lv_tabview-tab_button index="1"` voi nen `0x172332`.
+- Dat sau cac `lv_tabview-tab` de dam bao button da ton tai khi codegen goi `lv_tabview_get_tab_button`.
+
+Validation:
+
+- `xmllint --noout screens/ai/quota_portrait.xml screens/ai/quota_landscape.xml`: PASS.
+
+Trang thai:
+
+- Visual QA hien tai: FAIL do screenshot moi van la generated truoc khi sua XML.
+- XML fix: DONE.
+- Codegen sau fix: PENDING GUI export.
+
+## Trang thai Visual QA Task 11.3
+
+| Hang muc | Trang thai |
+|---|---|
+| Codegen 76/76 | PASS |
+| Build generated moi | PASS |
+| Smoke render 76/76 | PASS |
+| 14 man Task 10 co screenshot | PASS |
+| Wi-Fi Switch bo goc | PASS |
+| AI Quota TabView mau primary | FAIL trong screenshot hien tai |
+| AI Quota XML fix | DONE |
+| AI Quota codegen sau fix | PENDING |
+
+Can chay lai LVGL Pro Editor "Compile and export code" sau sua `quota_*`, roi render lai:
+
+```sh
+./build/bin/lvgl_simulator --screen quota_portrait --screenshot ui-preview-task11-2/generated-76/quota_portrait.png
+./build/bin/lvgl_simulator --screen quota_landscape --screenshot ui-preview-task11-2/generated-76/quota_landscape.png
+```
+
+---
+
+# Task 11.4 - Final AI Quota TabView Verification
+
+Ngay cap nhat: 2026-10-11
+
+## Codegen
+
+Sau lan Compile and export code moi nhat tu LVGL Pro Editor:
+
+- `screens/ai/quota_portrait_gen.c`: `2026-10-11 13:35:10`
+- `screens/ai/quota_landscape_gen.c`: `2026-10-11 13:35:10`
+- `file_list_gen.cmake`: `2026-10-11 13:35:10`
+
+Da xac minh generated C co style tab button:
+
+- `quota_portrait_gen.c` co `lv_tabview_get_tab_button(ai_quota_tabview, 0)` va `lv_tabview_get_tab_button(ai_quota_tabview, 1)`.
+- `quota_landscape_gen.c` co `lv_tabview_get_tab_button(ai_quota_tabview_landscape, 0)` va `lv_tabview_get_tab_button(ai_quota_tabview_landscape, 1)`.
+- Tab index `0` dung `0xa52a26`.
+- Tab index `1` dung `0x172332`.
+
+## Build va render
+
+Da chay:
+
+```sh
+cmake --build build -j 8
+cmake --build preview-build --target lib-ui -j 8
+cmake --build preview-build --target lved-runtime -j 8
+./build/bin/lvgl_simulator --screen quota_portrait --screenshot ui-preview-task11-3/quota_portrait.png
+./build/bin/lvgl_simulator --screen quota_landscape --screenshot ui-preview-task11-3/quota_landscape.png
+```
+
+Ket qua:
+
+- Desktop simulator build: PASS.
+- `lib-ui`: PASS.
+- `lved-runtime`: PASS.
+- Screenshot quota portrait: PASS.
+- Screenshot quota landscape: PASS.
+
+Screenshot moi:
+
+- `ui-preview-task11-3/quota_portrait.png`
+- `ui-preview-task11-3/quota_landscape.png`
+
+Kich thuoc:
+
+- Portrait: `320x480`.
+- Landscape: `480x320`.
+
+## Visual QA
+
+Da mo screenshot moi va kiem tra truc quan:
+
+- Active tab `Claude`: nen primary `#a52a26`.
+- Inactive tab `ChatGPT`: nen dark `#172332`.
+- Khong con nen xam sang mac dinh.
+- TabView that van render dung.
+- Noi dung quota, progress bar, reset time va nut `Lam moi du lieu` hien thi dung.
+- Khong thay overlap/clipping nghiem trong trong hai screenshot moi.
+
+Trang thai: PASS.
+
+## Tab switching
+
+Simulator CLI hien tai chi ho tro:
+
+- `--screen NAME`
+- `--list`
+- `--exit-after-ms N`
+- `--screenshot PATH`
+
+Khong co tham so click/touch de mo phong chuyen tab tu dong. Vi vay tab switching chua duoc test tu dong trong simulator CLI. Can kiem tra thu cong trong GUI/simulator neu can xac minh state ChatGPT active.
+
+## Trang thai cuoi
+
+| Hang muc | Trang thai |
+|---|---|
+| AI Quota codegen sau fix | PASS |
+| `lv_tabview_get_tab_button` generated | PASS |
+| Build simulator | PASS |
+| Build `lib-ui` | PASS |
+| Build `lved-runtime` | PASS |
+| Screenshot portrait moi | PASS |
+| Screenshot landscape moi | PASS |
+| Active tab primary | PASS |
+| Inactive tab dark | PASS |
+| Nen xam mac dinh | RESOLVED |
+| Tab switching tu dong | NOT SUPPORTED by current simulator CLI |
+
+AI Quota TabView Visual QA: PASS cho trang thai active tab mac dinh trong screenshot moi.

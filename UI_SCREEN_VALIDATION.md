@@ -1346,3 +1346,280 @@ Bước cần làm trong GUI:
 5. Kiểm tra lại `file_list_gen.cmake` phải có 76 screen entries trước khi build simulator.
 
 Trạng thái Task 11.2: BLOCKED ở bước codegen. Không đánh dấu PASS cho codegen/build/render/Visual QA.
+
+---
+
+# Task 11.3 - Codegen Blocker Resolved and Verified
+
+Ngày cập nhật: 2026-10-11
+
+## Workflow export xác minh được
+
+Theo tài liệu chính thức LVGL Pro:
+
+- CLI `generate` sinh C/H từ XML.
+- CLI `validate` kiểm tra XML.
+- CLI `compile` build runtime để preview/test, không thay thế bước generate.
+- Trong Editor, nút preview toolbar "Compile and export code" là thao tác generate C code rồi compile lại preview.
+- Tài liệu integration cũng ghi Editor và CLI đều có thể generate C code từ XML.
+
+Nguồn tham khảo:
+
+- `https://lvgl.io/docs/pro/cli`
+- `https://lvgl.io/docs/pro/editor/overview`
+- `https://lvgl.io/docs/pro/integration/using-exported-c-code`
+
+## CLI
+
+Đã xác minh lệnh CLI chính thức:
+
+```sh
+npx --yes @lvgl/lvglpro generate /Users/dungndev/Developer/xomcodingui
+npx --yes @lvgl/lvglpro validate /Users/dungndev/Developer/xomcodingui --errorlimit 50
+```
+
+Trạng thái CLI trong môi trường hiện tại:
+
+- `@lvgl/lvglpro` có sẵn qua `npx`.
+- `validate` và `generate` đều yêu cầu `LVGLPRO_CLI_TOKEN` hoặc `--token`.
+- Không có `LVGLPRO_CLI_TOKEN` trong environment.
+- Không dùng session GUI làm token, vì đó không phải CLI license token hợp lệ.
+
+Cách chạy CLI đúng khi có token:
+
+```sh
+export LVGLPRO_CLI_TOKEN="..."
+npx --yes @lvgl/lvglpro validate /Users/dungndev/Developer/xomcodingui --errorlimit 50
+npx --yes @lvgl/lvglpro generate /Users/dungndev/Developer/xomcodingui
+```
+
+Không commit token, không ghi token vào source/log/report.
+
+## Kết quả GUI export mới
+
+Sau lần GUI export mới nhất, filesystem đã cập nhật thật:
+
+| Hạng mục | Kết quả |
+|---|---:|
+| XML source trong `screens/` | 76 |
+| Generated `_gen.c` | 76 |
+| Generated `_gen.h` | 76 |
+| Screen entries trong `file_list_gen.cmake` | 76 |
+| Simulator Gallery screens | 76 |
+
+Timestamp:
+
+- `file_list_gen.cmake`: `2026-10-11 13:27:24`
+- `xomcodingui_gen.c`: `2026-10-11 13:27:24`
+- `xomcodingui_gen.h`: `2026-10-11 13:27:24`
+
+14 màn Task 10 đã có generated C/H:
+
+- `screens/network/diagnostics_landscape_gen.c/.h`
+- `screens/network/diagnostics_portrait_gen.c/.h`
+- `screens/notifications/detail_landscape_gen.c/.h`
+- `screens/notifications/detail_portrait_gen.c/.h`
+- `screens/notifications/notifications_landscape_gen.c/.h`
+- `screens/notifications/notifications_portrait_gen.c/.h`
+- `screens/states/empty_landscape_gen.c/.h`
+- `screens/states/empty_portrait_gen.c/.h`
+- `screens/states/loading_landscape_gen.c/.h`
+- `screens/states/loading_portrait_gen.c/.h`
+- `screens/states/offline_landscape_gen.c/.h`
+- `screens/states/offline_portrait_gen.c/.h`
+- `screens/system/logs_landscape_gen.c/.h`
+- `screens/system/logs_portrait_gen.c/.h`
+
+## Stale status sau export
+
+Wi-Fi đã không còn stale:
+
+- `screens/settings/wifi_portrait_gen.c`: `2026-10-11 13:27:24`, mới hơn XML `2026-10-11 12:52:32`.
+- `screens/settings/wifi_landscape_gen.c`: `2026-10-11 13:27:24`, mới hơn XML `2026-10-11 12:52:24`.
+- Generated C có `LV_PART_MAIN`, `LV_PART_INDICATOR | LV_STATE_CHECKED`, `LV_PART_KNOB` và radius `999`.
+
+AI Quota đã được export ở `13:27:23`, nhưng Visual QA phát hiện tab buttons vẫn dùng màu mặc định. Sau đó đã sửa lại XML nguồn để thêm `lv_tabview-tab_button` trực tiếp:
+
+- `screens/ai/quota_portrait.xml`: `2026-10-11 13:31:04`
+- `screens/ai/quota_landscape.xml`: `2026-10-11 13:31:11`
+
+Do đó 2 màn quota hiện lại cần export thêm một lần nữa để generated C/H phản ánh sửa TabView mới. Không sửa generated C/H thủ công.
+
+## Build mới trên 76 generated screens
+
+Đã build trên generated C/H mới:
+
+```sh
+cmake --build preview-build --target lib-ui -j 8
+cmake --build preview-build --target lved-runtime -j 8
+cmake --build build -j 8
+```
+
+Kết quả:
+
+- `lib-ui`: PASS.
+- `lved-runtime`: PASS.
+- Desktop simulator: PASS.
+
+Simulator build log có compile các object mới:
+
+- `screens/network/diagnostics_*_gen.c.o`
+- `screens/notifications/*_gen.c.o`
+- `screens/states/*_gen.c.o`
+- `screens/system/logs_*_gen.c.o`
+
+## Smoke render
+
+Đã render bằng desktop simulator:
+
+```sh
+./build/bin/lvgl_simulator --list
+./build/bin/lvgl_simulator --screen <screen> --screenshot ui-preview-task11-2/generated-76/<screen>.png
+```
+
+Kết quả:
+
+- Simulator Gallery: 76 screens.
+- Screenshot PNG: 76/76.
+- Fail: 0.
+- Output: `ui-preview-task11-2/generated-76/`.
+
+## Visual check trọng tâm
+
+Đã mở screenshot thực tế:
+
+- `quota_portrait.png`: render được, nhưng TabView tab buttons vẫn xám sáng trong generated hiện tại.
+- `quota_landscape.png`: render được, nhưng TabView tab buttons vẫn xám sáng trong generated hiện tại.
+- `wifi_portrait.png`: switch bo tròn đúng, track/knob dạng viên thuốc.
+- `wifi_landscape.png`: switch bo tròn đúng, track/knob dạng viên thuốc.
+
+Lý do AI Quota chưa đạt Visual QA:
+
+- Generated C hiện tại chỉ style tab bar container bằng `lv_tabview_get_tab_bar`.
+- XML lúc export chưa có `lv_tabview-tab_button`, nên tab buttons dùng default style.
+- Đã sửa XML nguồn sau render, cần GUI export lại 2 màn quota.
+
+## Trạng thái Task 11.2/11.3
+
+| Tiêu chí | Trạng thái |
+|---|---|
+| Codegen blocker | RESOLVED |
+| 76/76 generated C/H | PASS |
+| `file_list_gen.cmake` đủ 76 màn | PASS |
+| 14 màn Task 10 generated | PASS |
+| Wi-Fi stale | RESOLVED |
+| AI Quota stale | PENDING - XML mới sửa sau export, cần export lại |
+| `lib-ui` build | PASS |
+| `lved-runtime` build | PASS |
+| Desktop simulator build | PASS |
+| Smoke render | PASS 76/76 |
+| Wi-Fi switch Visual QA | PASS qua screenshot mới |
+| AI Quota TabView Visual QA | FAIL hiện tại, XML đã sửa, cần export lại |
+
+Hành động cụ thể còn lại:
+
+1. Trong LVGL Pro Editor, chạy lại "Compile and export code" cho project sau khi đã sửa `screens/ai/quota_portrait.xml` và `screens/ai/quota_landscape.xml`.
+2. Kiểm tra `screens/ai/quota_*_gen.c` mới hơn XML và có `lv_tabview_get_tab_button`.
+3. Build lại và render lại riêng `quota_portrait` và `quota_landscape`.
+
+---
+
+# Task 11.4 - Final AI Quota TabView Verification
+
+Ngày cập nhật: 2026-10-11
+
+## Codegen sau export cuối
+
+Sau khi chạy lại LVGL Pro Editor Compile and export code:
+
+| File | Timestamp |
+|---|---|
+| `screens/ai/quota_portrait.xml` | `2026-10-11 13:31:04` |
+| `screens/ai/quota_portrait_gen.c` | `2026-10-11 13:35:10` |
+| `screens/ai/quota_landscape.xml` | `2026-10-11 13:31:11` |
+| `screens/ai/quota_landscape_gen.c` | `2026-10-11 13:35:10` |
+| `file_list_gen.cmake` | `2026-10-11 13:35:10` |
+
+Generated C đã phản ánh XML mới:
+
+- `quota_portrait_gen.c` có `lv_tabview_get_tab_button(ai_quota_tabview, 0)`.
+- `quota_portrait_gen.c` có `lv_tabview_get_tab_button(ai_quota_tabview, 1)`.
+- `quota_landscape_gen.c` có `lv_tabview_get_tab_button(ai_quota_tabview_landscape, 0)`.
+- `quota_landscape_gen.c` có `lv_tabview_get_tab_button(ai_quota_tabview_landscape, 1)`.
+- Tab button index `0` được set `0xa52a26`.
+- Tab button index `1` được set `0x172332`.
+
+Tổng kiểm kê vẫn đúng:
+
+| Hạng mục | Kết quả |
+|---|---:|
+| XML source | 76 |
+| Generated `_gen.c` | 76 |
+| Generated `_gen.h` | 76 |
+| `file_list_gen.cmake` screen entries | 76 |
+
+## Build
+
+Đã chạy:
+
+```sh
+cmake --build build -j 8
+cmake --build preview-build --target lib-ui -j 8
+cmake --build preview-build --target lved-runtime -j 8
+```
+
+Kết quả:
+
+- Desktop simulator: PASS.
+- `lib-ui`: PASS.
+- `lved-runtime`: PASS.
+
+## Render AI Quota
+
+Đã xuất screenshot mới:
+
+```sh
+./build/bin/lvgl_simulator --screen quota_portrait --screenshot ui-preview-task11-3/quota_portrait.png
+./build/bin/lvgl_simulator --screen quota_landscape --screenshot ui-preview-task11-3/quota_landscape.png
+```
+
+Kết quả:
+
+- `ui-preview-task11-3/quota_portrait.png`: PASS, `320x480`.
+- `ui-preview-task11-3/quota_landscape.png`: PASS, `480x320`.
+
+Visual check:
+
+- Active tab `Claude`: màu primary `#a52a26`.
+- Inactive tab `ChatGPT`: màu dark `#172332`.
+- Không còn nền xám mặc định.
+- Không phát hiện clipping/overlap nghiêm trọng trong hai screenshot mới.
+
+## Tab switching
+
+Simulator CLI hiện chỉ hỗ trợ:
+
+- `--screen NAME`
+- `--list`
+- `--exit-after-ms N`
+- `--screenshot PATH`
+
+Không có tham số click/touch để mô phỏng chuyển tab tự động. Tab switching cần kiểm tra thủ công trong GUI/simulator nếu cần xác minh active state của `ChatGPT`.
+
+## Trạng thái cuối Task 11.4
+
+| Tiêu chí | Trạng thái |
+|---|---|
+| AI Quota generated mới hơn XML | PASS |
+| `lv_tabview_get_tab_button` generated | PASS |
+| Tab active `#a52a26` qua screenshot | PASS |
+| Tab inactive `#172332` qua screenshot | PASS |
+| Nền xám mặc định | RESOLVED |
+| Simulator build | PASS |
+| `lib-ui` build | PASS |
+| `lved-runtime` build | PASS |
+| Screenshot quota portrait | PASS |
+| Screenshot quota landscape | PASS |
+| Tab switching tự động | NOT SUPPORTED by current simulator CLI |
+
+AI Quota TabView Visual QA: PASS cho trạng thái tab active mặc định trong screenshot mới.

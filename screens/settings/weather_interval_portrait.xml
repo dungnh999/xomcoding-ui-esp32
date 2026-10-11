@@ -1,0 +1,334 @@
+
+<screen>
+    <view
+        width="320"
+        height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="12"
+            width="36" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="18" y="18"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="58" y="9"
+            width="248" height="28"
+            text="Cập nhật thời tiết"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="59" y="36"
+            width="238" height="17"
+            text="Thiết lập chu kỳ lấy dữ liệu"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="59"
+            width="296" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- CURRENT CONFIGURATION -->
+
+        <lv_label
+            x="13" y="67"
+            width="250" height="19"
+            text="CẤU HÌNH HIỆN TẠI"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="89"
+            width="296" height="67"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="23" y="102"
+            width="42" height="42"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="23" y="113"
+            width="42" height="19"
+            text="15m"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="75" y="98"
+            width="217" height="21"
+            text="Cập nhật tự động"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="75" y="123"
+            width="217" height="17"
+            text="Mỗi 15 phút qua Open-Meteo"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- SELECT INTERVAL -->
+
+        <lv_label
+            x="13" y="165"
+            width="250" height="19"
+            text="CHỌN CHU KỲ CẬP NHẬT"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="187"
+            width="296" height="191"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- 5 MINUTES -->
+
+        <lv_button
+            name="btn_weather_interval_5m"
+            x="22" y="196"
+            width="276" height="39"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="12" y="8"
+                width="155" height="22"
+                text="5 phút"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="172" y="9"
+                width="92" height="20"
+                text="Rất thường xuyên"
+                style_text_font="be_medium_10"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- 15 MINUTES: SELECTED -->
+
+        <lv_button
+            name="btn_weather_interval_15m"
+            x="22" y="241"
+            width="276" height="39"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_color="0xa52a26"
+            style_border_width="1"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="12" y="8"
+                width="160" height="22"
+                text="15 phút"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="181" y="9"
+                width="83" height="20"
+                text="Đã chọn"
+                style_text_font="be_medium_11"
+                style_text_align="right"
+                style_text_color="0xe28d88"
+            />
+        </lv_button>
+
+        <!-- 30 MINUTES -->
+
+        <lv_button
+            name="btn_weather_interval_30m"
+            x="22" y="286"
+            width="276" height="39"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="12" y="8"
+                width="160" height="22"
+                text="30 phút"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="181" y="9"
+                width="83" height="20"
+                text="Tiết kiệm"
+                style_text_font="be_medium_11"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- 60 MINUTES -->
+
+        <lv_button
+            name="btn_weather_interval_60m"
+            x="22" y="331"
+            width="276" height="39"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="12" y="8"
+                width="160" height="22"
+                text="60 phút"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="181" y="9"
+                width="83" height="20"
+                text="Ít cập nhật"
+                style_text_font="be_medium_11"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- INFORMATION -->
+
+        <lv_obj
+            x="12" y="389"
+            width="296" height="35"
+            style_bg_color="0x121f2d"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="23" y="398"
+            width="3" height="17"
+            style_bg_color="0x38bdf8"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="2"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="35" y="394"
+            width="258" height="20"
+            text="Chu kỳ ngắn sẽ gọi API thường xuyên hơn"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- BOTTOM: CANCEL -->
+
+        <lv_button
+            name="btn_weather_interval_cancel"
+            x="12" y="434"
+            width="140" height="37"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Hủy"
+                style_text_font="be_semibold_14"
+                style_text_color="0xe2e8f0"
+            />
+        </lv_button>
+
+        <!-- BOTTOM: SAVE -->
+
+        <lv_button
+            name="btn_weather_interval_save"
+            x="160" y="434"
+            width="148" height="37"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu cấu hình"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

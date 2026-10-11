@@ -1,0 +1,21 @@
+<screen>
+	<view width="320" height="480" style_bg_color="0x0b111b" style_bg_opa="100%" style_border_width="0" style_radius="0" style_pad_all="0">
+		<lv_obj x="12" y="12" width="36" height="36" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="10" style_pad_all="0" />
+		<lv_image x="18" y="18" width="24" height="24" src="ui_back" />
+		<lv_label x="58" y="9" width="244" height="28" text="Chu kỳ đồng bộ" style_text_font="be_semibold_20" style_text_color="0xffffff" />
+		<lv_label x="59" y="36" width="236" height="17" text="Tần suất cập nhật dashboard" style_text_font="be_medium_11" style_text_color="0x94a3b8" />
+		<lv_obj x="12" y="59" width="296" height="1" style_bg_color="0x29394d" style_bg_opa="100%" style_border_width="0" style_pad_all="0" />
+
+		<lv_label x="13" y="74" width="220" height="19" text="ĐANG CHỌN" style_text_font="be_semibold_12" style_text_color="0x94a3b8" />
+		<lv_obj x="12" y="98" width="296" height="72" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="12" style_pad_all="0" />
+		<lv_label x="24" y="113" width="120" height="24" text="30 giây" style_text_font="be_semibold_20" style_text_color="0xffffff" />
+		<lv_label x="24" y="143" width="240" height="18" text="Cân bằng giữa dữ liệu mới và tải hệ thống" style_text_font="be_medium_10" style_text_color="0x94a3b8" />
+
+		<lv_label x="13" y="188" width="220" height="19" text="TÙY CHỌN" style_text_font="be_semibold_12" style_text_color="0x94a3b8" />
+		<lv_button x="12" y="214" width="296" height="46" style_bg_color="0x233247" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="10" style_shadow_width="0" style_pad_all="0"><lv_label align="center" text="10 giây · cập nhật nhanh" style_text_font="be_semibold_12" style_text_color="0x94a3b8" /></lv_button>
+		<lv_button x="12" y="270" width="296" height="46" style_bg_color="0xa52a26" style_bg_opa="100%" style_border_width="0" style_radius="10" style_shadow_width="0" style_pad_all="0"><lv_label align="center" text="30 giây · khuyến nghị" style_text_font="be_semibold_12" style_text_color="0xffffff" /></lv_button>
+		<lv_button x="12" y="326" width="296" height="46" style_bg_color="0x233247" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="10" style_shadow_width="0" style_pad_all="0"><lv_label align="center" text="2 phút · tiết kiệm pin" style_text_font="be_semibold_12" style_text_color="0x94a3b8" /></lv_button>
+
+		<lv_button x="12" y="426" width="296" height="38" style_bg_color="0xa52a26" style_bg_opa="100%" style_border_width="0" style_radius="10" style_shadow_width="0" style_pad_all="0"><lv_label align="center" text="Lưu chu kỳ đồng bộ" style_text_font="be_semibold_14" style_text_color="0xffffff" /></lv_button>
+	</view>
+</screen>

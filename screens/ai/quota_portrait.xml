@@ -1,0 +1,585 @@
+
+<screen>
+    <view
+        width="320" height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="12" width="36" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="18" y="18"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="58" y="9" width="245" height="28"
+            text="AI Quota"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="59" y="36" width="240" height="17"
+            text="Hạn mức 5 giờ và hàng tuần"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="59" width="296" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- TAB VIEW -->
+
+        <lv_tabview
+            name="ai_quota_tabview"
+            x="12" y="68"
+            width="296" height="354"
+            active="0"
+            tab_bar_position="top"
+            style_bg_color="0x0b111b"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="0"
+            style_pad_all="0"
+        >
+
+            <!-- COMPACT TAB BAR -->
+
+            <lv_tabview-tab_bar
+                height="36"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="9"
+                style_pad_all="0"
+                style_text_font="be_semibold_12"
+                style_text_color="0xffffff"
+            />
+
+            <!-- ================================= -->
+            <!-- CLAUDE TAB                        -->
+            <!-- ================================= -->
+
+            <lv_tabview-tab
+                text="Claude"
+                style_bg_color="0x0b111b"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0"
+            >
+
+                <!-- CLAUDE PROVIDER -->
+
+                <lv_obj
+                    x="0" y="8" width="296" height="45"
+                    style_bg_color="0x172332"
+                    style_bg_opa="100%"
+                    style_border_color="0x29394d"
+                    style_border_width="1"
+                    style_radius="9"
+                    style_pad_all="0"
+                />
+
+                <lv_obj
+                    x="12" y="16" width="29" height="29"
+                    style_bg_color="0x392b27"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="8"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    x="12" y="22" width="29" height="18"
+                    text="AI"
+                    style_text_font="be_semibold_12"
+                    style_text_align="center"
+                    style_text_color="0xe8a487"
+                />
+
+                <lv_label
+                    x="52" y="11" width="160" height="19"
+                    text="Claude"
+                    style_text_font="be_semibold_14"
+                    style_text_color="0xffffff"
+                />
+
+                <lv_label
+                    x="52" y="32" width="160" height="15"
+                    text="Usage limits"
+                    style_text_font="be_medium_10"
+                    style_text_color="0x94a3b8"
+                />
+
+                <lv_label
+                    x="230" y="20" width="53" height="18"
+                    text="DEMO"
+                    style_text_font="be_medium_11"
+                    style_text_align="right"
+                    style_text_color="0xf5b942"
+                />
+
+                <!-- CLAUDE 5H TITLE -->
+
+                <lv_label
+                    x="1" y="59" width="230" height="19"
+                    text="HẠN MỨC 5 GIỜ"
+                    style_text_font="be_semibold_12"
+                    style_text_color="0x94a3b8"
+                />
+
+                <!-- CLAUDE 5H CARD -->
+
+                <lv_obj
+                    x="0" y="80" width="296" height="99"
+                    style_bg_color="0x172332"
+                    style_bg_opa="100%"
+                    style_border_color="0x29394d"
+                    style_border_width="1"
+                    style_radius="10"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    x="12" y="85" width="165" height="20"
+                    text="Quota 5h"
+                    style_text_font="be_semibold_14"
+                    style_text_color="0xffffff"
+                />
+
+                <lv_label
+                    name="claude_quota_5h_remaining"
+                    x="204" y="84" width="80" height="27"
+                    text="58%"
+                    style_text_font="be_semibold_20"
+                    style_text_align="right"
+                    style_text_color="0x34d399"
+                />
+
+                <!-- PROGRESS -->
+
+                <lv_obj
+                    x="12" y="117" width="272" height="9"
+                    style_bg_color="0x29394d"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="5"
+                    style_pad_all="0"
+                />
+
+                <lv_obj
+                    name="claude_quota_5h_bar"
+                    x="12" y="117" width="114" height="9"
+                    style_bg_color="0x34d399"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="5"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    name="claude_quota_5h_used"
+                    x="12" y="134" width="133" height="18"
+                    text="Đã dùng 42%"
+                    style_text_font="be_medium_11"
+                    style_text_color="0x94a3b8"
+                />
+
+                <lv_label
+                    x="150" y="134" width="134" height="18"
+                    text="Còn lại 58%"
+                    style_text_font="be_medium_11"
+                    style_text_align="right"
+                    style_text_color="0x34d399"
+                />
+
+                <lv_label
+                    name="claude_quota_5h_reset"
+                    x="12" y="157" width="272" height="17"
+                    text="Reset sau: 2 giờ 15 phút"
+                    style_text_font="be_medium_10"
+                    style_text_color="0x38bdf8"
+                />
+
+                <!-- CLAUDE WEEK TITLE -->
+
+                <lv_label
+                    x="1" y="185" width="250" height="19"
+                    text="HẠN MỨC HÀNG TUẦN"
+                    style_text_font="be_semibold_12"
+                    style_text_color="0x94a3b8"
+                />
+
+                <!-- CLAUDE WEEK CARD -->
+
+                <lv_obj
+                    x="0" y="207" width="296" height="99"
+                    style_bg_color="0x172332"
+                    style_bg_opa="100%"
+                    style_border_color="0x29394d"
+                    style_border_width="1"
+                    style_radius="10"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    x="12" y="212" width="165" height="20"
+                    text="Quota Week"
+                    style_text_font="be_semibold_14"
+                    style_text_color="0xffffff"
+                />
+
+                <lv_label
+                    name="claude_quota_week_remaining"
+                    x="204" y="211" width="80" height="27"
+                    text="24%"
+                    style_text_font="be_semibold_20"
+                    style_text_align="right"
+                    style_text_color="0xe8a487"
+                />
+
+                <!-- WEEK PROGRESS -->
+
+                <lv_obj
+                    x="12" y="244" width="272" height="9"
+                    style_bg_color="0x29394d"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="5"
+                    style_pad_all="0"
+                />
+
+                <lv_obj
+                    name="claude_quota_week_bar"
+                    x="12" y="244" width="207" height="9"
+                    style_bg_color="0xe8a487"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="5"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    name="claude_quota_week_used"
+                    x="12" y="261" width="133" height="18"
+                    text="Đã dùng 76%"
+                    style_text_font="be_medium_11"
+                    style_text_color="0x94a3b8"
+                />
+
+                <lv_label
+                    x="150" y="261" width="134" height="18"
+                    text="Còn lại 24%"
+                    style_text_font="be_medium_11"
+                    style_text_align="right"
+                    style_text_color="0xe8a487"
+                />
+
+                <lv_label
+                    name="claude_quota_week_reset"
+                    x="12" y="284" width="272" height="17"
+                    text="Reset sau: 3 ngày 12 giờ"
+                    style_text_font="be_medium_10"
+                    style_text_color="0x38bdf8"
+                />
+
+            </lv_tabview-tab>
+
+            <!-- ================================= -->
+            <!-- CHATGPT TAB                       -->
+            <!-- ================================= -->
+
+            <lv_tabview-tab
+                text="ChatGPT"
+                style_bg_color="0x0b111b"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0"
+            >
+
+                <!-- CHATGPT PROVIDER -->
+
+                <lv_obj
+                    x="0" y="8" width="296" height="45"
+                    style_bg_color="0x172332"
+                    style_bg_opa="100%"
+                    style_border_color="0x29394d"
+                    style_border_width="1"
+                    style_radius="9"
+                    style_pad_all="0"
+                />
+
+                <lv_obj
+                    x="12" y="16" width="29" height="29"
+                    style_bg_color="0x173d35"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="8"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    x="12" y="22" width="29" height="18"
+                    text="GPT"
+                    style_text_font="be_semibold_12"
+                    style_text_align="center"
+                    style_text_color="0x34d399"
+                />
+
+                <lv_label
+                    x="52" y="11" width="160" height="19"
+                    text="ChatGPT"
+                    style_text_font="be_semibold_14"
+                    style_text_color="0xffffff"
+                />
+
+                <lv_label
+                    x="52" y="32" width="160" height="15"
+                    text="Usage limits"
+                    style_text_font="be_medium_10"
+                    style_text_color="0x94a3b8"
+                />
+
+                <lv_label
+                    x="230" y="20" width="53" height="18"
+                    text="DEMO"
+                    style_text_font="be_medium_11"
+                    style_text_align="right"
+                    style_text_color="0xf5b942"
+                />
+
+                <!-- CHATGPT 5H TITLE -->
+
+                <lv_label
+                    x="1" y="59" width="230" height="19"
+                    text="HẠN MỨC 5 GIỜ"
+                    style_text_font="be_semibold_12"
+                    style_text_color="0x94a3b8"
+                />
+
+                <!-- CHATGPT 5H CARD -->
+
+                <lv_obj
+                    x="0" y="80" width="296" height="99"
+                    style_bg_color="0x172332"
+                    style_bg_opa="100%"
+                    style_border_color="0x29394d"
+                    style_border_width="1"
+                    style_radius="10"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    x="12" y="85" width="165" height="20"
+                    text="Quota 5h"
+                    style_text_font="be_semibold_14"
+                    style_text_color="0xffffff"
+                />
+
+                <lv_label
+                    name="chatgpt_quota_5h_remaining"
+                    x="204" y="84" width="80" height="27"
+                    text="70%"
+                    style_text_font="be_semibold_20"
+                    style_text_align="right"
+                    style_text_color="0x34d399"
+                />
+
+                <!-- PROGRESS -->
+
+                <lv_obj
+                    x="12" y="117" width="272" height="9"
+                    style_bg_color="0x29394d"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="5"
+                    style_pad_all="0"
+                />
+
+                <lv_obj
+                    name="chatgpt_quota_5h_bar"
+                    x="12" y="117" width="82" height="9"
+                    style_bg_color="0x34d399"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="5"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    name="chatgpt_quota_5h_used"
+                    x="12" y="134" width="133" height="18"
+                    text="Đã dùng 30%"
+                    style_text_font="be_medium_11"
+                    style_text_color="0x94a3b8"
+                />
+
+                <lv_label
+                    x="150" y="134" width="134" height="18"
+                    text="Còn lại 70%"
+                    style_text_font="be_medium_11"
+                    style_text_align="right"
+                    style_text_color="0x34d399"
+                />
+
+                <lv_label
+                    name="chatgpt_quota_5h_reset"
+                    x="12" y="157" width="272" height="17"
+                    text="Reset sau: 3 giờ 20 phút"
+                    style_text_font="be_medium_10"
+                    style_text_color="0x38bdf8"
+                />
+
+                <!-- CHATGPT WEEK TITLE -->
+
+                <lv_label
+                    x="1" y="185" width="250" height="19"
+                    text="HẠN MỨC HÀNG TUẦN"
+                    style_text_font="be_semibold_12"
+                    style_text_color="0x94a3b8"
+                />
+
+                <!-- CHATGPT WEEK CARD -->
+
+                <lv_obj
+                    x="0" y="207" width="296" height="99"
+                    style_bg_color="0x172332"
+                    style_bg_opa="100%"
+                    style_border_color="0x29394d"
+                    style_border_width="1"
+                    style_radius="10"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    x="12" y="212" width="165" height="20"
+                    text="Quota Week"
+                    style_text_font="be_semibold_14"
+                    style_text_color="0xffffff"
+                />
+
+                <lv_label
+                    name="chatgpt_quota_week_remaining"
+                    x="204" y="211" width="80" height="27"
+                    text="55%"
+                    style_text_font="be_semibold_20"
+                    style_text_align="right"
+                    style_text_color="0x34d399"
+                />
+
+                <!-- WEEK PROGRESS -->
+
+                <lv_obj
+                    x="12" y="244" width="272" height="9"
+                    style_bg_color="0x29394d"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="5"
+                    style_pad_all="0"
+                />
+
+                <lv_obj
+                    name="chatgpt_quota_week_bar"
+                    x="12" y="244" width="122" height="9"
+                    style_bg_color="0x34d399"
+                    style_bg_opa="100%"
+                    style_border_width="0"
+                    style_radius="5"
+                    style_pad_all="0"
+                />
+
+                <lv_label
+                    name="chatgpt_quota_week_used"
+                    x="12" y="261" width="133" height="18"
+                    text="Đã dùng 45%"
+                    style_text_font="be_medium_11"
+                    style_text_color="0x94a3b8"
+                />
+
+                <lv_label
+                    x="150" y="261" width="134" height="18"
+                    text="Còn lại 55%"
+                    style_text_font="be_medium_11"
+                    style_text_align="right"
+                    style_text_color="0x34d399"
+                />
+
+                <lv_label
+                    name="chatgpt_quota_week_reset"
+                    x="12" y="284" width="272" height="17"
+                    text="Reset sau: 4 ngày 6 giờ"
+                    style_text_font="be_medium_10"
+                    style_text_color="0x38bdf8"
+                />
+
+            </lv_tabview-tab>
+
+            <lv_tabview-tab_button
+                index="0"
+                style_bg_color="0xa52a26"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_radius="7"
+                style_shadow_width="0"
+                style_text_font="be_semibold_12"
+                style_text_color="0xffffff"
+            />
+
+            <lv_tabview-tab_button
+                index="1"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_radius="7"
+                style_shadow_width="0"
+                style_text_font="be_semibold_12"
+                style_text_color="0xffffff"
+            />
+
+        </lv_tabview>
+
+        <!-- REFRESH BUTTON -->
+
+        <lv_button
+            name="btn_ai_quota_refresh"
+            x="12" y="432"
+            width="296" height="38"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Làm mới dữ liệu"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

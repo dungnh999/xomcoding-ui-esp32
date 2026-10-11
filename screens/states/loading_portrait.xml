@@ -1,0 +1,20 @@
+<screen>
+	<styles>
+		<style name="loading_fill" bg_color="0xa52a26" bg_opa="100%" radius="999" />
+	</styles>
+	<view width="320" height="480" style_bg_color="0x0b111b" style_bg_opa="100%" style_border_width="0" style_radius="0" style_pad_all="0">
+		<lv_obj x="12" y="12" width="36" height="36" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="10" style_pad_all="0" />
+		<lv_image x="18" y="18" width="24" height="24" src="ui_back" />
+		<lv_label x="58" y="9" width="238" height="28" text="Đang tải" style_text_font="be_semibold_20" style_text_color="0xffffff" />
+		<lv_label x="59" y="36" width="238" height="17" text="Trạng thái demo" style_text_font="be_medium_11" style_text_color="0x94a3b8" />
+		<lv_obj x="12" y="59" width="296" height="1" style_bg_color="0x29394d" style_bg_opa="100%" style_border_width="0" style_pad_all="0" />
+
+		<lv_obj x="32" y="110" width="256" height="238" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="14" style_pad_all="0" />
+		<lv_spinner x="132" y="150" width="56" height="56" />
+		<lv_label x="52" y="224" width="216" height="24" text="Đang chuẩn bị dữ liệu demo" style_text_font="be_semibold_14" style_text_align="center" style_text_color="0xffffff" />
+		<lv_label x="58" y="258" width="204" height="34" text="Không có kết nối mạng thật trong giai đoạn UI." style_text_font="be_medium_11" style_text_align="center" style_text_color="0x94a3b8" />
+		<lv_bar x="58" y="312" width="204" height="8" min_value="0" max_value="100" value="62" style_bg_color="0x29394d" style_bg_opa="100%" style_radius="999">
+			<style name="loading_fill" selector="indicator" />
+		</lv_bar>
+	</view>
+</screen>

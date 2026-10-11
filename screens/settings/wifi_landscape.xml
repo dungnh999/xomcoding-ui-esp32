@@ -1,8 +1,8 @@
 <screen>
 	<styles>
-		<style name="style_sw" bg_color="0xcbd5e1" bg_opa="100%" />
-		<style name="style_sw_on" bg_color="0xa52a26" />
-		<style name="style_knob" bg_color="0xffffff" />
+		<style name="style_sw" bg_color="0x344256" bg_opa="100%" radius="999" pad_all="3" border_width="0" />
+		<style name="style_sw_on" bg_color="0xa52a26" bg_opa="100%" radius="999" />
+		<style name="style_knob" bg_color="0xffffff" bg_opa="100%" radius="999" pad_all="0" border_width="0" shadow_color="0x000000" shadow_opa="25%" shadow_width="4" />
 	</styles>
 
 	<view
@@ -141,8 +141,8 @@
 
 		<!-- WIFI SWITCH -->
 		<lv_switch name="wifi_enabled_landscape" x="180" y="91" width="43" height="24">
-			<style name="style_sw" />
-			<style name="style_sw_on" selector="checked|indicator" />
+			<style name="style_sw" selector="main" />
+			<style name="style_sw_on" selector="indicator|checked" />
 			<style name="style_knob" selector="knob" />
 		</lv_switch>
 

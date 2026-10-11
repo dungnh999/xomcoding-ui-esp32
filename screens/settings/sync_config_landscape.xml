@@ -1,0 +1,389 @@
+
+<screen>
+    <styles>
+        <!-- SWITCH MAIN -->
+        <style
+            name="sync_land_switch_main"
+            bg_color="0x344256"
+            bg_opa="100%"
+            radius="999"
+            pad_all="3"
+            border_width="0"
+        />
+
+        <!-- SWITCH CHECKED -->
+        <style
+            name="sync_land_switch_checked"
+            bg_color="0xa52a26"
+            bg_opa="100%"
+            radius="999"
+        />
+
+        <!-- SWITCH KNOB -->
+        <style
+            name="sync_land_switch_knob"
+            bg_color="0xffffff"
+            bg_opa="100%"
+            radius="999"
+            pad_all="0"
+            border_width="0"
+            shadow_color="0x000000"
+            shadow_opa="25%"
+            shadow_width="4"
+        />
+    </styles>
+
+    <view
+        width="480"
+        height="320"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="9"
+            width="34" height="34"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="17" y="14"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="56" y="5"
+            width="280" height="28"
+            text="Đồng bộ dữ liệu"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="57" y="32"
+            width="280" height="17"
+            text="Chu kỳ, timeout và thử lại"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="53"
+            width="456" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- LEFT: AUTO SYNC -->
+
+        <lv_label
+            x="13" y="61"
+            width="211" height="19"
+            text="ĐỒNG BỘ TỰ ĐỘNG"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="83"
+            width="220" height="71"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="94"
+            width="158" height="20"
+            text="Tự động đồng bộ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="22" y="120"
+            width="186" height="17"
+            text="Cập nhật dữ liệu theo chu kỳ"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_switch
+            name="sync_auto_enabled_landscape"
+            x="181" y="91"
+            width="40" height="22"
+            checked="true"
+        >
+            <style
+                name="sync_land_switch_main"
+                selector="main"
+            />
+            <style
+                name="sync_land_switch_checked"
+                selector="indicator|checked"
+            />
+            <style
+                name="sync_land_switch_knob"
+                selector="knob"
+            />
+        </lv_switch>
+
+        <!-- LEFT: INTERVAL -->
+
+        <lv_label
+            x="13" y="162"
+            width="211" height="19"
+            text="CHU KỲ VÀ KẾT NỐI"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="184"
+            width="220" height="84"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- INTERVAL ROW -->
+
+        <lv_label
+            x="22" y="195"
+            width="117" height="19"
+            text="Chu kỳ đồng bộ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="142" y="195"
+            width="60" height="19"
+            text="30 giây"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_image
+            x="199" y="192"
+            width="24" height="24"
+            src="ui_next"
+        />
+
+        <lv_obj
+            x="22" y="224"
+            width="200" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- TIMEOUT ROW -->
+
+        <lv_label
+            x="22" y="238"
+            width="117" height="19"
+            text="Thời gian chờ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="142" y="238"
+            width="60" height="19"
+            text="10 giây"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_image
+            x="199" y="234"
+            width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- RIGHT: RETRY -->
+
+        <lv_label
+            x="241" y="61"
+            width="210" height="19"
+            text="XỬ LÝ KHI LỖI"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="240" y="83"
+            width="228" height="105"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- RETRY TOGGLE -->
+
+        <lv_label
+            x="251" y="98"
+            width="155" height="19"
+            text="Tự thử lại khi lỗi"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_switch
+            name="sync_retry_enabled_landscape"
+            x="415" y="95"
+            width="42" height="23"
+            checked="true"
+        >
+            <style
+                name="sync_land_switch_main"
+                selector="main"
+            />
+            <style
+                name="sync_land_switch_checked"
+                selector="indicator|checked"
+            />
+            <style
+                name="sync_land_switch_knob"
+                selector="knob"
+            />
+        </lv_switch>
+
+        <lv_label
+            x="251" y="122"
+            width="205" height="17"
+            text="Thử lại khi mất kết nối"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="251" y="146"
+            width="206" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- RETRY COUNT -->
+
+        <lv_label
+            x="251" y="157"
+            width="119" height="19"
+            text="Số lần thử lại"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="375" y="157"
+            width="59" height="19"
+            text="3 lần"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_image
+            x="436" y="153"
+            width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- RIGHT: LAST SYNC -->
+
+        <lv_label
+            x="241" y="197"
+            width="210" height="19"
+            text="TRẠNG THÁI ĐỒNG BỘ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="240" y="219"
+            width="228" height="49"
+            style_bg_color="0x121f2d"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="251" y="232"
+            width="7" height="7"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="264" y="225"
+            width="190" height="19"
+            text="Đồng bộ gần nhất"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="264" y="246"
+            width="191" height="17"
+            text="Thành công · 10:35:28"
+            style_text_font="be_medium_11"
+            style_text_color="0x34d399"
+        />
+
+        <!-- BOTTOM SAVE BUTTON -->
+
+        <lv_button
+            name="btn_sync_config_save_landscape"
+            x="12" y="278"
+            width="456" height="30"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu cài đặt đồng bộ"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

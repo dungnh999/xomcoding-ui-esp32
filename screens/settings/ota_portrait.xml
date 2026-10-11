@@ -1,0 +1,311 @@
+
+<screen>
+    <view
+        width="320"
+        height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="12"
+            width="36" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="18" y="18"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="58" y="9"
+            width="248" height="28"
+            text="Cập nhật Firmware"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="59" y="36"
+            width="238" height="17"
+            text="Cập nhật phần mềm thiết bị OTA"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="59"
+            width="296" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- FIRMWARE OVERVIEW -->
+
+        <lv_label
+            x="13" y="68"
+            width="250" height="19"
+            text="THÔNG TIN FIRMWARE"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="91"
+            width="296" height="71"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="23" y="105"
+            width="42" height="42"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="23" y="116"
+            width="42" height="20"
+            text="OTA"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="75" y="99"
+            width="215" height="21"
+            text="Xóm Coding ESP32-S3"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="75" y="124"
+            width="213" height="18"
+            text="Cập nhật qua Wi-Fi"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- VERSION INFORMATION -->
+
+        <lv_label
+            x="13" y="171"
+            width="250" height="19"
+            text="PHIÊN BẢN PHẦN MỀM"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="194"
+            width="296" height="86"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- CURRENT VERSION -->
+
+        <lv_label
+            x="24" y="203"
+            width="165" height="19"
+            text="Phiên bản hiện tại"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="197" y="203"
+            width="99" height="19"
+            text="v1.0.0"
+            style_text_font="be_medium_12"
+            style_text_align="right"
+            style_text_color="0xffffff"
+        />
+
+        <lv_obj
+            x="24" y="234"
+            width="272" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- AVAILABLE VERSION -->
+
+        <lv_label
+            x="24" y="246"
+            width="169" height="19"
+            text="Phiên bản mới nhất"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="195" y="246"
+            width="101" height="19"
+            text="Chưa kiểm tra"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- UPDATE STATUS -->
+
+        <lv_label
+            x="13" y="290"
+            width="250" height="19"
+            text="TRẠNG THÁI CẬP NHẬT"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="313"
+            width="296" height="54"
+            style_bg_color="0x121f2d"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="23" y="327"
+            width="7" height="7"
+            style_bg_color="0x64748b"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="36" y="319"
+            width="255" height="20"
+            text="Chưa kiểm tra cập nhật"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="36" y="343"
+            width="255" height="17"
+            text="Kết nối Wi-Fi để kiểm tra"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- UPDATE NOTE -->
+
+        <lv_obj
+            x="12" y="377"
+            width="296" height="51"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="23" y="386"
+            width="3" height="31"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="2"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="35" y="382"
+            width="257" height="20"
+            text="Lưu ý trước khi cập nhật"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="35" y="404"
+            width="257" height="17"
+            text="Giữ nguồn điện ổn định khi OTA"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- BACK -->
+
+        <lv_button
+            name="btn_ota_back"
+            x="12" y="438"
+            width="140" height="33"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Quay lại"
+                style_text_font="be_semibold_14"
+                style_text_color="0xe2e8f0"
+            />
+        </lv_button>
+
+        <!-- CHECK FOR UPDATES -->
+
+        <lv_button
+            name="btn_ota_check"
+            x="160" y="438"
+            width="148" height="33"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Kiểm tra OTA"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

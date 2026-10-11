@@ -158,8 +158,24 @@ endif()
 # ---------------------------------------------------------------------------
 #  Application
 # ---------------------------------------------------------------------------
-add_executable(${PROJECT_NAME} main.c hal.c)
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+set(SIM_GALLERY_C "${CMAKE_BINARY_DIR}/screen_gallery_gen.c")
+set(SIM_GALLERY_H "${CMAKE_BINARY_DIR}/screen_gallery_gen.h")
+file(GLOB_RECURSE SIM_GENERATED_SCREEN_HEADERS
+  CONFIGURE_DEPENDS
+  "${UI_DIR}/screens/*/*_gen.h")
+add_custom_command(
+  OUTPUT "${SIM_GALLERY_C}" "${SIM_GALLERY_H}"
+  COMMAND ${Python3_EXECUTABLE}
+          "${CMAKE_CURRENT_SOURCE_DIR}/generate_gallery.py"
+          --ui-dir "${UI_DIR}"
+          --out-c "${SIM_GALLERY_C}"
+          --out-h "${SIM_GALLERY_H}"
+  DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/generate_gallery.py" ${SIM_GENERATED_SCREEN_HEADERS}
+  COMMENT "Generating simulator screen gallery from LVGL Pro outputs"
+  VERBATIM)
+
+add_executable(${PROJECT_NAME} main.c hal.c "${SIM_GALLERY_C}" "${SIM_GALLERY_H}")
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_BINARY_DIR})
 target_link_libraries(${PROJECT_NAME} PRIVATE lib-ui lvgl ${BACKEND_LIBS})
 
 # Guard the sim/ files (so a glob-based embedded build skips them) and pass the

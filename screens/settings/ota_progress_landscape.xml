@@ -1,0 +1,357 @@
+
+<screen>
+    <view
+        width="480"
+        height="320"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="9" width="34" height="34"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="17" y="14"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="56" y="5"
+            width="310" height="28"
+            text="Đang cập nhật OTA"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="57" y="32"
+            width="285" height="17"
+            text="Tiến trình cài đặt firmware"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="53"
+            width="456" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- LEFT COLUMN: DEVICE -->
+
+        <lv_label
+            x="13" y="61"
+            width="210" height="19"
+            text="THIẾT BỊ CẬP NHẬT"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="83"
+            width="220" height="75"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="98"
+            width="40" height="40"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="109"
+            width="40" height="19"
+            text="OTA"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="70" y="95"
+            width="151" height="20"
+            text="Xóm Coding ESP32-S3"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="70" y="120"
+            width="152" height="18"
+            text="v1.0.0 -&gt; v1.1.0"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- LEFT COLUMN: PROGRESS -->
+
+        <lv_label
+            x="13" y="167"
+            width="210" height="19"
+            text="TIẾN TRÌNH CẬP NHẬT"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="189"
+            width="220" height="118"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="201"
+            width="151" height="19"
+            text="Đang tải firmware"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            name="ota_progress_percent_landscape"
+            x="174" y="194"
+            width="47" height="28"
+            text="65%"
+            style_text_font="be_semibold_20"
+            style_text_align="right"
+            style_text_color="0xe28d88"
+        />
+
+        <!-- PROGRESS TRACK -->
+
+        <lv_obj
+            x="22" y="231"
+            width="200" height="10"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="5"
+            style_pad_all="0"
+        />
+
+        <!-- PROGRESS FILL: 65% -->
+
+        <lv_obj
+            name="ota_progress_fill_landscape"
+            x="22" y="231"
+            width="130" height="10"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="5"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="252"
+            width="194" height="17"
+            text="Đã tải: 1.3 / 2.0 MB"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="22" y="284"
+            width="7" height="7"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="35" y="278"
+            width="184" height="18"
+            text="Máy chủ đã kết nối"
+            style_text_font="be_medium_11"
+            style_text_color="0x34d399"
+        />
+
+        <!-- RIGHT COLUMN: STAGES -->
+
+        <lv_label
+            x="241" y="61"
+            width="216" height="19"
+            text="CÁC BƯỚC CẬP NHẬT"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="240" y="83"
+            width="228" height="126"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- STAGE 1 -->
+
+        <lv_obj
+            x="252" y="104"
+            width="8" height="8"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="270" y="96"
+            width="185" height="20"
+            text="Kiểm tra bản cập nhật"
+            style_text_font="be_medium_12"
+            style_text_color="0x34d399"
+        />
+
+        <lv_obj
+            x="251" y="125"
+            width="206" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- STAGE 2 -->
+
+        <lv_obj
+            x="252" y="144"
+            width="8" height="8"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="270" y="136"
+            width="185" height="20"
+            text="Đang tải firmware"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_obj
+            x="251" y="165"
+            width="206" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- STAGE 3 -->
+
+        <lv_obj
+            x="252" y="184"
+            width="8" height="8"
+            style_bg_color="0x64748b"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="270" y="176"
+            width="185" height="20"
+            text="Xác minh và cài đặt"
+            style_text_font="be_medium_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- RIGHT COLUMN: WARNING -->
+
+        <lv_label
+            x="241" y="216"
+            width="216" height="19"
+            text="LƯU Ý AN TOÀN"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="240" y="238"
+            width="228" height="69"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_color="0x70403d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="251" y="251"
+            width="3" height="43"
+            style_bg_color="0xe28d88"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="2"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="263" y="244"
+            width="192" height="20"
+            text="Không ngắt nguồn"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="263" y="268"
+            width="192" height="17"
+            text="Đang cập nhật firmware"
+            style_text_font="be_medium_11"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="263" y="286"
+            width="192" height="16"
+            text="Máy sẽ tự khởi động lại"
+            style_text_font="be_medium_10"
+            style_text_color="0xe28d88"
+        />
+
+    </view>
+</screen>

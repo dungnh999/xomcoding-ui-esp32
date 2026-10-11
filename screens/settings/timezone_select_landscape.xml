@@ -1,0 +1,387 @@
+
+<screen>
+    <view
+        width="480"
+        height="320"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="9"
+            width="34" height="34"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="17" y="14"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="56" y="5"
+            width="305" height="28"
+            text="Chọn múi giờ"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="57" y="32"
+            width="280" height="17"
+            text="Thiết lập thời gian địa phương"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="53"
+            width="456" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- LEFT: CURRENT TIMEZONE -->
+
+        <lv_label
+            x="13" y="61"
+            width="211" height="19"
+            text="MÚI GIỜ HIỆN TẠI"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="83"
+            width="220" height="79"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="99"
+            width="42" height="42"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="110"
+            width="42" height="20"
+            text="+7"
+            style_text_font="be_semibold_14"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="73" y="93"
+            width="148" height="21"
+            text="Việt Nam"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="73" y="119"
+            width="148" height="17"
+            text="Asia/Ho_Chi_Minh"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_label
+            x="73" y="139"
+            width="148" height="16"
+            text="UTC+7"
+            style_text_font="be_medium_10"
+            style_text_color="0xe28d88"
+        />
+
+        <!-- LEFT: DESCRIPTION -->
+
+        <lv_label
+            x="13" y="173"
+            width="211" height="19"
+            text="THÔNG TIN MÚI GIỜ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="195"
+            width="220" height="70"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="202"
+            width="199" height="19"
+            text="Giờ địa phương"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="22" y="224"
+            width="199" height="17"
+            text="Áp dụng cho đồng hồ"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_label
+            x="22" y="243"
+            width="199" height="16"
+            text="Và lịch đồng bộ thiết bị"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- RIGHT: TIMEZONE LIST -->
+
+        <lv_label
+            x="241" y="61"
+            width="216" height="19"
+            text="CHỌN MÚI GIỜ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="240" y="83"
+            width="228" height="182"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- UTC+7: SELECTED -->
+
+        <lv_button
+            name="btn_timezone_utc7_landscape"
+            x="249" y="90"
+            width="210" height="30"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_color="0xa52a26"
+            style_border_width="1"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="8" y="5"
+                width="146" height="20"
+                text="Việt Nam, Bangkok"
+                style_text_font="be_medium_11"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="155" y="5"
+                width="46" height="20"
+                text="UTC+7"
+                style_text_font="be_semibold_12"
+                style_text_align="right"
+                style_text_color="0xe28d88"
+            />
+        </lv_button>
+
+        <!-- UTC+8 -->
+
+        <lv_button
+            name="btn_timezone_utc8_landscape"
+            x="249" y="124"
+            width="210" height="30"
+            style_bg_color="0x213247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="8" y="5"
+                width="146" height="20"
+                text="Singapore, Bắc Kinh"
+                style_text_font="be_medium_11"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="155" y="5"
+                width="46" height="20"
+                text="UTC+8"
+                style_text_font="be_medium_11"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- UTC+9 -->
+
+        <lv_button
+            name="btn_timezone_utc9_landscape"
+            x="249" y="158"
+            width="210" height="30"
+            style_bg_color="0x213247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="8" y="5"
+                width="146" height="20"
+                text="Tokyo, Seoul"
+                style_text_font="be_medium_11"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="155" y="5"
+                width="46" height="20"
+                text="UTC+9"
+                style_text_font="be_medium_11"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- UTC+5:30 -->
+
+        <lv_button
+            name="btn_timezone_utc530_landscape"
+            x="249" y="192"
+            width="210" height="30"
+            style_bg_color="0x213247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="8" y="5"
+                width="132" height="20"
+                text="Ấn Độ"
+                style_text_font="be_medium_11"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="144" y="5"
+                width="57" height="20"
+                text="UTC+5:30"
+                style_text_font="be_medium_11"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- UTC+0 -->
+
+        <lv_button
+            name="btn_timezone_utc0_landscape"
+            x="249" y="226"
+            width="210" height="30"
+            style_bg_color="0x213247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="8" y="5"
+                width="146" height="20"
+                text="UTC quốc tế"
+                style_text_font="be_medium_11"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="155" y="5"
+                width="46" height="20"
+                text="UTC+0"
+                style_text_font="be_medium_11"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- BOTTOM: CANCEL -->
+
+        <lv_button
+            name="btn_timezone_cancel_landscape"
+            x="12" y="274"
+            width="220" height="34"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Hủy"
+                style_text_font="be_semibold_14"
+                style_text_color="0xe2e8f0"
+            />
+        </lv_button>
+
+        <!-- BOTTOM: SAVE -->
+
+        <lv_button
+            name="btn_timezone_save_landscape"
+            x="240" y="274"
+            width="228" height="34"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu múi giờ"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

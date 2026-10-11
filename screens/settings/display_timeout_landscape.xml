@@ -1,0 +1,389 @@
+
+<screen>
+    <view
+        width="480"
+        height="320"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="9"
+            width="34" height="34"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="17" y="14"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="56" y="5"
+            width="330" height="28"
+            text="Tự tắt màn hình"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="57" y="32"
+            width="280" height="17"
+            text="Thiết lập thời gian chờ"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="53"
+            width="456" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- LEFT: CURRENT CONFIGURATION -->
+
+        <lv_label
+            x="13" y="61"
+            width="211" height="19"
+            text="CẤU HÌNH HIỆN TẠI"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="83"
+            width="220" height="75"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="99"
+            width="42" height="42"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="110"
+            width="42" height="20"
+            text="5m"
+            style_text_font="be_semibold_14"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="73" y="93"
+            width="149" height="21"
+            text="Tắt tự động"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="73" y="120"
+            width="149" height="17"
+            text="Sau 5 phút"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- LEFT: DISPLAY INFORMATION -->
+
+        <lv_label
+            x="13" y="168"
+            width="211" height="19"
+            text="THÔNG TIN HIỂN THỊ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="190"
+            width="220" height="79"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="203"
+            width="3" height="52"
+            style_bg_color="0x38bdf8"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="2"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="33" y="196"
+            width="187" height="20"
+            text="Tiết kiệm năng lượng"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="33" y="220"
+            width="187" height="18"
+            text="Tắt khi không thao tác"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_label
+            x="33" y="242"
+            width="187" height="18"
+            text="Chạm để bật màn hình"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- RIGHT: TIMEOUT OPTIONS -->
+
+        <lv_label
+            x="241" y="61"
+            width="218" height="19"
+            text="CHỌN THỜI GIAN CHỜ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="240" y="83"
+            width="228" height="186"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- 30 SECONDS -->
+
+        <lv_button
+            name="btn_display_timeout_30s_landscape"
+            x="249" y="90"
+            width="210" height="30"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="9" y="5"
+                width="103" height="20"
+                text="30 giây"
+                style_text_font="be_medium_12"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="114" y="5"
+                width="86" height="20"
+                text="Tiết kiệm điện"
+                style_text_font="be_medium_10"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- 1 MINUTE -->
+
+        <lv_button
+            name="btn_display_timeout_1m_landscape"
+            x="249" y="124"
+            width="210" height="30"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="9" y="5"
+                width="103" height="20"
+                text="1 phút"
+                style_text_font="be_medium_12"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="114" y="5"
+                width="86" height="20"
+                text="Nhanh"
+                style_text_font="be_medium_10"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- 5 MINUTES: SELECTED -->
+
+        <lv_button
+            name="btn_display_timeout_5m_landscape"
+            x="249" y="158"
+            width="210" height="30"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_color="0xa52a26"
+            style_border_width="1"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="9" y="5"
+                width="103" height="20"
+                text="5 phút"
+                style_text_font="be_semibold_12"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="114" y="5"
+                width="86" height="20"
+                text="Đã chọn"
+                style_text_font="be_medium_10"
+                style_text_align="right"
+                style_text_color="0xe28d88"
+            />
+        </lv_button>
+
+        <!-- 10 MINUTES -->
+
+        <lv_button
+            name="btn_display_timeout_10m_landscape"
+            x="249" y="192"
+            width="210" height="30"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="9" y="5"
+                width="103" height="20"
+                text="10 phút"
+                style_text_font="be_medium_12"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="114" y="5"
+                width="86" height="20"
+                text="Dài hơn"
+                style_text_font="be_medium_10"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- NEVER -->
+
+        <lv_button
+            name="btn_display_timeout_never_landscape"
+            x="249" y="226"
+            width="210" height="30"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="7"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                x="9" y="5"
+                width="122" height="20"
+                text="Không bao giờ"
+                style_text_font="be_medium_12"
+                style_text_color="0xffffff"
+            />
+
+            <lv_label
+                x="135" y="5"
+                width="65" height="20"
+                text="Luôn bật"
+                style_text_font="be_medium_10"
+                style_text_align="right"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- BOTTOM: CANCEL -->
+
+        <lv_button
+            name="btn_display_timeout_cancel_landscape"
+            x="12" y="278"
+            width="220" height="30"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Hủy"
+                style_text_font="be_semibold_14"
+                style_text_color="0xe2e8f0"
+            />
+        </lv_button>
+
+        <!-- BOTTOM: SAVE -->
+
+        <lv_button
+            name="btn_display_timeout_save_landscape"
+            x="240" y="278"
+            width="228" height="30"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu cấu hình"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

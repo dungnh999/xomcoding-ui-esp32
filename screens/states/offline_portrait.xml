@@ -1,0 +1,16 @@
+<screen>
+	<view width="320" height="480" style_bg_color="0x0b111b" style_bg_opa="100%" style_border_width="0" style_radius="0" style_pad_all="0">
+		<lv_obj x="12" y="12" width="36" height="36" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="10" style_pad_all="0" />
+		<lv_image x="18" y="18" width="24" height="24" src="ui_back" />
+		<lv_label x="58" y="9" width="238" height="28" text="Offline" style_text_font="be_semibold_20" style_text_color="0xffffff" />
+		<lv_label x="59" y="36" width="238" height="17" text="Error state demo" style_text_font="be_medium_11" style_text_color="0x94a3b8" />
+		<lv_obj x="12" y="59" width="296" height="1" style_bg_color="0x29394d" style_bg_opa="100%" style_border_width="0" style_pad_all="0" />
+		<lv_obj x="32" y="118" width="256" height="230" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="14" style_pad_all="0" />
+		<lv_obj x="130" y="150" width="60" height="60" style_bg_color="0x3b1f24" style_bg_opa="100%" style_border_width="0" style_radius="30" style_pad_all="0" />
+		<lv_label x="58" y="232" width="204" height="24" text="Mất kết nối demo" style_text_font="be_semibold_16" style_text_align="center" style_text_color="0xffffff" />
+		<lv_label x="58" y="268" width="204" height="48" text="Không thực hiện kết nối thật. Đây là trạng thái lỗi để kiểm tra giao diện." style_text_font="be_medium_11" style_text_align="center" style_text_color="0x94a3b8" />
+		<lv_button x="72" y="326" width="176" height="34" style_bg_color="0xa52a26" style_bg_opa="100%" style_border_width="0" style_radius="10" style_shadow_width="0" style_pad_all="0">
+			<lv_label align="center" text="Thử lại demo" style_text_font="be_semibold_14" style_text_color="0xffffff" />
+		</lv_button>
+	</view>
+</screen>

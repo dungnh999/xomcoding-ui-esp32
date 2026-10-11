@@ -620,6 +620,17 @@ lv_style_t meter_knob_hidden;
 
 void xomcodingui_init_gen(const char * asset_path)
 {
+    /* When running from the editor the theme set from the XML should overwrite this */
+#if !defined(LV_EDITOR_PREVIEW)
+#if LV_USE_THEME_SIMPLE
+    lv_display_t * disp = lv_display_get_default();
+    lv_theme_t * th = lv_theme_simple_init(disp);
+    lv_display_set_theme(disp, th);
+#else
+    LV_LOG_WARN("Simple theme is selected in project.xml but LV_USE_THEME_SIMPLE is disabled");
+#endif
+#endif /*LV_EDITOR_PREVIEW*/
+
 
     /*----------------
      * Fonts

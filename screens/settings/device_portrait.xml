@@ -1,0 +1,396 @@
+
+<screen>
+    <view
+        width="320"
+        height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="12" width="36" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="18" y="18"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="58" y="9"
+            width="248" height="28"
+            text="Thiết bị và bộ nhớ"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="59" y="36"
+            width="240" height="17"
+            text="Phần cứng và tài nguyên"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="59" width="296" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- DEVICE OVERVIEW -->
+
+        <lv_label
+            x="13" y="67"
+            width="230" height="19"
+            text="THÔNG TIN THIẾT BỊ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="89"
+            width="296" height="67"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="101"
+            width="40" height="40"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="106"
+            width="40" height="20"
+            text="S3"
+            style_text_font="be_semibold_16"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="72" y="97"
+            width="185" height="21"
+            text="Xóm Coding ESP32-S3"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="72" y="121"
+            width="175" height="18"
+            text="Firmware v1.0.0"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="264" y="114"
+            width="7" height="7"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="274" y="108"
+            width="27" height="18"
+            text="OK"
+            style_text_font="be_medium_11"
+            style_text_color="0x34d399"
+        />
+
+        <!-- HARDWARE -->
+
+        <lv_label
+            x="13" y="164"
+            width="230" height="19"
+            text="PHẦN CỨNG"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="186"
+            width="296" height="101"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- CHIP -->
+
+        <lv_label
+            x="24" y="193"
+            width="104" height="18"
+            text="Chip"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_label
+            x="130" y="193"
+            width="166" height="18"
+            text="ESP32-S3"
+            style_text_font="be_semibold_12"
+            style_text_align="right"
+            style_text_color="0xffffff"
+        />
+
+        <lv_obj
+            x="24" y="215"
+            width="272" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- PROCESSOR -->
+
+        <lv_label
+            x="24" y="222"
+            width="116" height="18"
+            text="CPU"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_label
+            x="130" y="222"
+            width="166" height="18"
+            text="Dual-core 240 MHz"
+            style_text_font="be_semibold_12"
+            style_text_align="right"
+            style_text_color="0xffffff"
+        />
+
+        <lv_obj
+            x="24" y="244"
+            width="272" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- FIRMWARE -->
+
+        <lv_label
+            x="24" y="251"
+            width="116" height="18"
+            text="Firmware"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_label
+            x="130" y="251"
+            width="166" height="18"
+            text="v1.0.0"
+            style_text_font="be_semibold_12"
+            style_text_align="right"
+            style_text_color="0xe28d88"
+        />
+
+        <!-- MEMORY -->
+
+        <lv_label
+            x="13" y="295"
+            width="230" height="19"
+            text="SỬ DỤNG BỘ NHỚ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="317"
+            width="296" height="104"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- RAM -->
+
+        <lv_label
+            x="24" y="323"
+            width="70" height="17"
+            text="RAM"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="152" y="323"
+            width="144" height="17"
+            text="180 / 320 KB"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="24" y="344"
+            width="272" height="6"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="24" y="344"
+            width="153" height="6"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <!-- FLASH -->
+
+        <lv_label
+            x="24" y="355"
+            width="70" height="17"
+            text="Flash"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="152" y="355"
+            width="144" height="17"
+            text="5.2 / 16 MB"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="24" y="375"
+            width="272" height="6"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="24" y="375"
+            width="88" height="6"
+            style_bg_color="0x38bdf8"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <!-- PSRAM -->
+
+        <lv_label
+            x="24" y="386"
+            width="70" height="17"
+            text="PSRAM"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="152" y="386"
+            width="144" height="17"
+            text="2.1 / 8 MB"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="24" y="406"
+            width="272" height="6"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="24" y="406"
+            width="71" height="6"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <!-- UPTIME -->
+
+        <lv_label
+            x="18" y="427"
+            width="284" height="17"
+            text="Thời gian hoạt động: 2 ngày 14 giờ"
+            style_text_font="be_medium_11"
+            style_text_align="center"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- REFRESH BUTTON -->
+
+        <lv_button
+            name="btn_device_refresh"
+            x="12" y="446"
+            width="296" height="25"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Làm mới thông tin"
+                style_text_font="be_semibold_12"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

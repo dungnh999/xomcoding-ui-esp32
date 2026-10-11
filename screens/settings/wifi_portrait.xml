@@ -1,5 +1,11 @@
 
 <screen>
+    <styles>
+        <style name="wifi_switch_main" bg_color="0x344256" bg_opa="100%" radius="999" pad_all="3" border_width="0" />
+        <style name="wifi_switch_checked" bg_color="0xa52a26" bg_opa="100%" radius="999" />
+        <style name="wifi_switch_knob" bg_color="0xffffff" bg_opa="100%" radius="999" pad_all="0" border_width="0" shadow_color="0x000000" shadow_opa="25%" shadow_width="4" />
+    </styles>
+
     <view width="320" height="480"
           style_bg_color="0x0b111b"
           style_bg_opa="100%"
@@ -87,7 +93,11 @@
             name="wifi_enabled"
             x="249" y="89"
             width="46" height="24"
-        />
+        >
+            <style name="wifi_switch_main" selector="main" />
+            <style name="wifi_switch_checked" selector="indicator|checked" />
+            <style name="wifi_switch_knob" selector="knob" />
+        </lv_switch>
 
         <lv_obj x="22" y="140"
                 width="274" height="1"

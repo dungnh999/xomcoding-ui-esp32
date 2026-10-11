@@ -267,17 +267,81 @@ list(
   ${CMAKE_CURRENT_LIST_DIR}/images/weather_wind_data.c
   ${CMAKE_CURRENT_LIST_DIR}/images/xom_boot_logo_data.c
   ${CMAKE_CURRENT_LIST_DIR}/images/xom_boot_logo_landscape_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/ai/quota_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/ai/quota_portrait_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/boot/boot_landscape_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/boot/boot_portrait_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/home/home_landscape_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/home/home_portrait_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/nas/nas_landscape_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/nas/nas_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/network/diagnostics_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/network/diagnostics_portrait_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/network/network_landscape_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/network/network_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/notifications/detail_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/notifications/detail_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/notifications/notifications_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/notifications/notifications_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/api_config_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/api_config_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/change_pin_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/change_pin_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/data_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/data_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/datetime_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/datetime_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/device_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/device_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/display_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/display_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/display_timeout_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/display_timeout_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/factory_reset_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/factory_reset_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/nas_config_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/nas_config_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/ota_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/ota_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/ota_progress_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/ota_progress_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/restart_confirm_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/restart_confirm_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/security_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/security_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/settings_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/settings_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/sync_config_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/sync_config_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/sync_interval_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/sync_interval_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/timezone_select_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/timezone_select_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/weather_config_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/weather_config_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/weather_interval_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/weather_interval_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/wifi_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/wifi_password_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/wifi_password_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/wifi_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/wifi_scan_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/wifi_scan_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/wifi_static_ip_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/settings/wifi_static_ip_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/states/empty_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/states/empty_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/states/loading_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/states/loading_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/states/offline_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/states/offline_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/system/logs_landscape_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/system/logs_portrait_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/system/system_landscape_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/system/system_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/weather/forecast_landscape_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/weather/forecast_portrait_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/weather/weather_landscape_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/weather/weather_portrait_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/xomcodingui_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/xomcodingui.c)

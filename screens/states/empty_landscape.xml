@@ -1,0 +1,16 @@
+<screen>
+	<view width="480" height="320" style_bg_color="0x0b111b" style_bg_opa="100%" style_border_width="0" style_radius="0" style_pad_all="0">
+		<lv_obj x="12" y="9" width="34" height="34" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="9" style_pad_all="0" />
+		<lv_image x="17" y="14" width="24" height="24" src="ui_back" />
+		<lv_label x="56" y="5" width="260" height="28" text="Không có dữ liệu" style_text_font="be_semibold_20" style_text_color="0xffffff" />
+		<lv_label x="57" y="32" width="250" height="17" text="Empty state demo" style_text_font="be_medium_11" style_text_color="0x94a3b8" />
+		<lv_obj x="12" y="53" width="456" height="1" style_bg_color="0x29394d" style_bg_opa="100%" style_border_width="0" style_pad_all="0" />
+		<lv_obj x="52" y="86" width="376" height="150" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="14" style_pad_all="0" />
+		<lv_obj x="82" y="131" width="58" height="58" style_bg_color="0x213247" style_bg_opa="100%" style_border_width="0" style_radius="29" style_pad_all="0" />
+		<lv_label x="168" y="116" width="220" height="24" text="Chưa có mục nào" style_text_font="be_semibold_16" style_text_color="0xffffff" />
+		<lv_label x="168" y="150" width="220" height="34" text="Danh sách demo đang trống, hãy thử làm mới sau." style_text_font="be_medium_11" style_text_color="0x94a3b8" />
+		<lv_button x="168" y="196" width="160" height="30" style_bg_color="0xa52a26" style_bg_opa="100%" style_border_width="0" style_radius="8" style_shadow_width="0" style_pad_all="0">
+			<lv_label align="center" text="Làm mới demo" style_text_font="be_semibold_12" style_text_color="0xffffff" />
+		</lv_button>
+	</view>
+</screen>

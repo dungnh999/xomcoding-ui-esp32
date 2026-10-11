@@ -337,7 +337,7 @@
 			style_shadow_width="0"
 			style_pad_all="0"
 		>
-			<lv_label align="center" text="HTTPS" style_text_font="be_semibold_11" style_text_color="0xffffff" />
+			<lv_label align="center" text="HTTPS" style_text_font="be_semibold_12" style_text_color="0xffffff" />
 		</lv_button>
 
 		<!-- API TOKEN -->

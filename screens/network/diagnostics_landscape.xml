@@ -1,0 +1,34 @@
+<screen>
+	<view width="480" height="320" style_bg_color="0x0b111b" style_bg_opa="100%" style_border_width="0" style_radius="0" style_pad_all="0">
+		<lv_obj x="12" y="9" width="34" height="34" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="9" style_pad_all="0" />
+		<lv_image x="17" y="14" width="24" height="24" src="ui_back" />
+		<lv_label x="56" y="5" width="280" height="28" text="Chẩn đoán mạng" style_text_font="be_semibold_20" style_text_color="0xffffff" />
+		<lv_label x="57" y="32" width="280" height="17" text="Kiểm tra demo · không ping thật" style_text_font="be_medium_11" style_text_color="0x94a3b8" />
+		<lv_obj x="12" y="53" width="456" height="1" style_bg_color="0x29394d" style_bg_opa="100%" style_border_width="0" style_pad_all="0" />
+
+		<lv_obj x="12" y="68" width="144" height="84" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="12" style_pad_all="0" />
+		<lv_label x="26" y="84" width="116" height="18" text="Tổng quan" style_text_font="be_semibold_12" style_text_color="0x94a3b8" />
+		<lv_label x="26" y="112" width="116" height="22" text="Ổn định" style_text_font="be_semibold_16" style_text_color="0x34d399" />
+
+		<lv_obj x="168" y="68" width="144" height="84" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="12" style_pad_all="0" />
+		<lv_label x="182" y="84" width="116" height="18" text="Độ trễ demo" style_text_font="be_semibold_12" style_text_color="0x94a3b8" />
+		<lv_label x="182" y="112" width="116" height="22" text="18 ms" style_text_font="be_semibold_16" style_text_color="0xffffff" />
+
+		<lv_obj x="324" y="68" width="144" height="84" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="12" style_pad_all="0" />
+		<lv_label x="338" y="84" width="116" height="18" text="Gói mất" style_text_font="be_semibold_12" style_text_color="0x94a3b8" />
+		<lv_label x="338" y="112" width="116" height="22" text="0.0%" style_text_font="be_semibold_16" style_text_color="0xffffff" />
+
+		<lv_obj x="12" y="166" width="456" height="70" style_bg_color="0x172332" style_bg_opa="100%" style_border_color="0x29394d" style_border_width="1" style_radius="12" style_pad_all="0" />
+		<lv_label x="26" y="182" width="110" height="18" text="Gateway" style_text_font="be_semibold_12" style_text_color="0xffffff" />
+		<lv_label x="26" y="205" width="110" height="16" text="192.168.1.1" style_text_font="be_medium_10" style_text_color="0x94a3b8" />
+		<lv_label x="170" y="182" width="90" height="18" text="DNS" style_text_font="be_semibold_12" style_text_color="0xffffff" />
+		<lv_label x="170" y="205" width="110" height="16" text="1.1.1.1" style_text_font="be_medium_10" style_text_color="0x94a3b8" />
+		<lv_label x="322" y="182" width="90" height="18" text="Internet" style_text_font="be_semibold_12" style_text_color="0xffffff" />
+		<lv_label x="322" y="205" width="120" height="16" text="Mô phỏng endpoint" style_text_font="be_medium_10" style_text_color="0x94a3b8" />
+		<lv_label x="410" y="182" width="42" height="18" text="WARN" style_text_font="be_semibold_12" style_text_align="right" style_text_color="0xf59e0b" />
+
+		<lv_button x="12" y="276" width="456" height="34" style_bg_color="0xa52a26" style_bg_opa="100%" style_border_width="0" style_radius="10" style_shadow_width="0" style_pad_all="0">
+			<lv_label align="center" text="Chạy kiểm tra demo" style_text_font="be_semibold_14" style_text_color="0xffffff" />
+		</lv_button>
+	</view>
+</screen>

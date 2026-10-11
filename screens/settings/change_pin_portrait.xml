@@ -1,0 +1,295 @@
+
+<screen>
+    <view
+        width="320"
+        height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="12"
+            width="36" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="18" y="18"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="58" y="9"
+            width="248" height="28"
+            text="Thay đổi mã PIN"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="59" y="36"
+            width="238" height="17"
+            text="Cập nhật mã khóa thiết bị"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="59"
+            width="296" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- SECURITY OVERVIEW -->
+
+        <lv_label
+            x="13" y="69"
+            width="230" height="19"
+            text="BẢO VỆ THIẾT BỊ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="92"
+            width="296" height="65"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- ICON -->
+
+        <lv_obj
+            x="23" y="104"
+            width="40" height="40"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="23" y="115"
+            width="40" height="19"
+            text="PIN"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="73" y="101"
+            width="218" height="21"
+            text="Mã bảo mật màn hình"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="73" y="126"
+            width="218" height="18"
+            text="Đổi PIN để bảo vệ thiết bị"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- PIN FORM -->
+
+        <lv_label
+            x="13" y="169"
+            width="230" height="19"
+            text="THÔNG TIN MÃ PIN"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="191"
+            width="296" height="205"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- CURRENT PIN -->
+
+        <lv_label
+            x="24" y="199"
+            width="260" height="19"
+            text="Mã PIN hiện tại"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_textarea
+            name="change_pin_current"
+            x="24" y="222"
+            width="272" height="35"
+            text=""
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+            style_bg_color="0x0f1b2a"
+            style_bg_opa="100%"
+            style_border_color="0x70403d"
+            style_border_width="1"
+            style_radius="8"
+            style_pad_left="11"
+            style_pad_right="11"
+            style_pad_top="6"
+            style_pad_bottom="0"
+        />
+
+        <!-- NEW PIN -->
+
+        <lv_label
+            x="24" y="265"
+            width="260" height="19"
+            text="Mã PIN mới"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_textarea
+            name="change_pin_new"
+            x="24" y="288"
+            width="272" height="35"
+            text=""
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+            style_bg_color="0x0f1b2a"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="8"
+            style_pad_left="11"
+            style_pad_right="11"
+            style_pad_top="6"
+            style_pad_bottom="0"
+        />
+
+        <!-- CONFIRM PIN -->
+
+        <lv_label
+            x="24" y="331"
+            width="260" height="19"
+            text="Xác nhận mã PIN mới"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_textarea
+            name="change_pin_confirm"
+            x="24" y="354"
+            width="272" height="35"
+            text=""
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+            style_bg_color="0x0f1b2a"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="8"
+            style_pad_left="11"
+            style_pad_right="11"
+            style_pad_top="6"
+            style_pad_bottom="0"
+        />
+
+        <!-- SECURITY NOTE -->
+
+        <lv_obj
+            x="12" y="406"
+            width="296" height="25"
+            style_bg_color="0x121f2d"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="8"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="414"
+            width="3" height="10"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="2"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="34" y="409"
+            width="260" height="19"
+            text="PIN mới nên có ít nhất 6 chữ số."
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- CANCEL -->
+
+        <lv_button
+            name="btn_change_pin_cancel"
+            x="12" y="439"
+            width="140" height="32"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Hủy"
+                style_text_font="be_semibold_14"
+                style_text_color="0xe2e8f0"
+            />
+        </lv_button>
+
+        <!-- SAVE PIN -->
+
+        <lv_button
+            name="btn_change_pin_save"
+            x="160" y="439"
+            width="148" height="32"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="9"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu mã PIN"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

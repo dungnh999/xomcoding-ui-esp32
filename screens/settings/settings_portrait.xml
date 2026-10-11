@@ -1,0 +1,411 @@
+
+<screen>
+    <view
+        width="320"
+        height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- ========================= -->
+        <!-- HEADER -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="12" width="36" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="18" y="18" width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="58" y="9" width="200" height="28"
+            text="Cài đặt"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="59" y="36" width="220" height="17"
+            text="Xóm Coding · ESP32-S3"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="59" width="296" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- SECTION TITLE -->
+
+        <lv_label
+            x="13" y="67" width="230" height="17"
+            text="THIẾT LẬP THIẾT BỊ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- ========================= -->
+        <!-- 01 - WIFI AND NETWORK -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="89" width="296" height="49"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="21" y="98" width="32" height="32"
+            style_bg_color="0x213247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="23" y="100" width="28" height="28"
+            src="boot_icon_wifi"
+        />
+
+        <lv_label
+            x="62" y="95" width="195" height="19"
+            text="Wi-Fi và mạng"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="62" y="114" width="195" height="17"
+            text="SSID, mật khẩu, IP, DNS"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_image
+            x="274" y="101" width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ========================= -->
+        <!-- 02 - DISPLAY -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="143" width="296" height="49"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="21" y="152" width="32" height="32"
+            style_bg_color="0x302529"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="158" width="30" height="18"
+            text="02"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="62" y="149" width="195" height="19"
+            text="Màn hình và giao diện"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="62" y="168" width="195" height="17"
+            text="Độ sáng, xoay, màn chờ"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_image
+            x="274" y="155" width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ========================= -->
+        <!-- 03 - WEATHER -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="197" width="296" height="49"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="21" y="206" width="32" height="32"
+            style_bg_color="0x213247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="212" width="30" height="18"
+            text="03"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0x38bdf8"
+        />
+
+        <lv_label
+            x="62" y="203" width="195" height="19"
+            text="Thời tiết và vị trí"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="62" y="222" width="195" height="17"
+            text="Thành phố, nhiệt độ, API"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_image
+            x="274" y="209" width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ========================= -->
+        <!-- 04 - DATA AND SERVICES -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="251" width="296" height="49"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="21" y="260" width="32" height="32"
+            style_bg_color="0x203730"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="266" width="30" height="18"
+            text="04"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0x34d399"
+        />
+
+        <lv_label
+            x="62" y="257" width="195" height="19"
+            text="Dữ liệu và dịch vụ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="62" y="276" width="195" height="17"
+            text="NAS, API, đồng bộ dữ liệu"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_image
+            x="274" y="263" width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ========================= -->
+        <!-- 05 - DATE AND TIME -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="305" width="296" height="49"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="21" y="314" width="32" height="32"
+            style_bg_color="0x343025"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="320" width="30" height="18"
+            text="05"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0xf5b942"
+        />
+
+        <lv_label
+            x="62" y="311" width="195" height="19"
+            text="Ngày giờ và múi giờ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="62" y="330" width="195" height="17"
+            text="NTP, GMT+7, định dạng giờ"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_image
+            x="274" y="317" width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ========================= -->
+        <!-- 06 - DEVICE INFO -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="359" width="296" height="49"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="21" y="368" width="32" height="32"
+            style_bg_color="0x292b40"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="374" width="30" height="18"
+            text="06"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0xa5b4fc"
+        />
+
+        <lv_label
+            x="62" y="365" width="195" height="19"
+            text="Thiết bị và bộ nhớ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="62" y="384" width="195" height="17"
+            text="Chip, Flash, PSRAM, firmware"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_image
+            x="274" y="371" width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ========================= -->
+        <!-- 07 - SECURITY AND SYSTEM -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="413" width="296" height="49"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x49363b"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="21" y="422" width="32" height="32"
+            style_bg_color="0x39272a"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="22" y="428" width="30" height="18"
+            text="07"
+            style_text_font="be_semibold_12"
+            style_text_align="center"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_label
+            x="62" y="419" width="195" height="19"
+            text="Bảo mật và hệ thống"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="62" y="438" width="195" height="17"
+            text="OTA, khởi động lại, reset"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_image
+            x="274" y="425" width="24" height="24"
+            src="ui_next"
+        />
+
+    </view>
+</screen>

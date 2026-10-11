@@ -1,0 +1,323 @@
+
+<screen>
+    <styles>
+        <!-- SWITCH STYLES -->
+        <style name="weather_cfg_switch_main"
+               bg_color="0x344256"
+               bg_opa="100%"
+               radius="999"
+               pad_all="3"
+               border_width="0" />
+
+        <style name="weather_cfg_switch_checked"
+               bg_color="0xa52a26"
+               bg_opa="100%"
+               radius="999" />
+
+        <style name="weather_cfg_switch_knob"
+               bg_color="0xffffff"
+               bg_opa="100%"
+               radius="999"
+               pad_all="0"
+               border_width="0"
+               shadow_color="0x000000"
+               shadow_opa="25%"
+               shadow_width="4" />
+    </styles>
+
+    <view width="320" height="480"
+          style_bg_color="0x0b111b"
+          style_bg_opa="100%"
+          style_border_width="0"
+          style_radius="0"
+          style_pad_all="0">
+
+        <!-- HEADER -->
+
+        <lv_obj x="12" y="12" width="36" height="36"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="10"
+                style_pad_all="0" />
+
+        <lv_image x="18" y="18"
+                  width="24" height="24"
+                  src="ui_back" />
+
+        <lv_label x="58" y="9"
+                  width="248" height="28"
+                  text="Thời tiết và vị trí"
+                  style_text_font="be_semibold_20"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="59" y="36"
+                  width="235" height="17"
+                  text="Thiết lập dữ liệu dự báo"
+                  style_text_font="be_medium_11"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="59" width="296" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- LOCATION SECTION -->
+
+        <lv_label x="13" y="67"
+                  width="225" height="19"
+                  text="VỊ TRÍ DỰ BÁO"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="88"
+                width="296" height="116"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="11"
+                style_pad_all="0" />
+
+        <!-- CITY -->
+
+        <lv_label x="24" y="96"
+                  width="160" height="19"
+                  text="Thành phố"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xe2e8f0" />
+
+        <lv_label x="204" y="96"
+                  width="92" height="19"
+                  text="Việt Nam"
+                  style_text_font="be_medium_11"
+                  style_text_align="right"
+                  style_text_color="0x94a3b8" />
+
+        <lv_textarea
+            name="weather_cfg_city"
+            x="24" y="119"
+            width="272" height="34"
+            text="Hà Nội"
+            style_text_font="be_medium_14"
+            style_text_color="0xffffff"
+            style_bg_color="0x0f1b2a"
+            style_bg_opa="100%"
+            style_border_color="0x70403d"
+            style_border_width="1"
+            style_radius="8"
+            style_pad_left="10"
+            style_pad_right="10"
+            style_pad_top="6"
+            style_pad_bottom="0"
+        />
+
+        <!-- LOCATION SEPARATOR -->
+
+        <lv_obj x="24" y="161"
+                width="272" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- COORDINATES -->
+
+        <lv_label x="24" y="168"
+                  width="92" height="18"
+                  text="Tọa độ"
+                  style_text_font="be_medium_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_label x="120" y="168"
+                  width="176" height="18"
+                  text="21.0285, 105.8542"
+                  style_text_font="be_medium_11"
+                  style_text_align="right"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="24" y="185"
+                  width="272" height="16"
+                  text="Vị trí mẫu: Hà Nội, Việt Nam"
+                  style_text_font="be_medium_10"
+                  style_text_color="0x94a3b8" />
+
+        <!-- TEMPERATURE UNIT -->
+
+        <lv_label x="13" y="212"
+                  width="225" height="19"
+                  text="ĐƠN VỊ NHIỆT ĐỘ"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="235"
+                width="296" height="45"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="10"
+                style_pad_all="0" />
+
+        <lv_label x="24" y="248"
+                  width="110" height="19"
+                  text="Nhiệt độ"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <!-- CELSIUS BUTTON -->
+
+        <lv_button
+            name="weather_cfg_celsius"
+            x="153" y="243"
+            width="70" height="29"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label align="center"
+                      text="°C"
+                      style_text_font="be_semibold_14"
+                      style_text_color="0xffffff" />
+        </lv_button>
+
+        <!-- FAHRENHEIT BUTTON -->
+
+        <lv_button
+            name="weather_cfg_fahrenheit"
+            x="228" y="243"
+            width="70" height="29"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label align="center"
+                      text="°F"
+                      style_text_font="be_medium_14"
+                      style_text_color="0x94a3b8" />
+        </lv_button>
+
+        <!-- WEATHER DATA SECTION -->
+
+        <lv_label x="13" y="289"
+                  width="245" height="19"
+                  text="DỮ LIỆU THỜI TIẾT"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="312"
+                width="296" height="116"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="11"
+                style_pad_all="0" />
+
+        <!-- SOURCE ROW -->
+
+        <lv_label x="24" y="319"
+                  width="143" height="20"
+                  text="Nguồn dữ liệu"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="171" y="319"
+                  width="125" height="20"
+                  text="Open-Meteo"
+                  style_text_font="be_semibold_12"
+                  style_text_align="right"
+                  style_text_color="0x38bdf8" />
+
+        <lv_obj x="24" y="345"
+                width="272" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- UPDATE INTERVAL ROW -->
+
+        <lv_label x="24" y="353"
+                  width="159" height="20"
+                  text="Chu kỳ cập nhật"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="192" y="353"
+                  width="78" height="20"
+                  text="15 phút"
+                  style_text_font="be_medium_12"
+                  style_text_align="right"
+                  style_text_color="0xe28d88" />
+
+        <lv_image x="274" y="350"
+                  width="24" height="24"
+                  src="ui_next" />
+
+        <lv_obj x="24" y="379"
+                width="272" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- FORECAST SWITCH ROW -->
+
+        <lv_label x="24" y="386"
+                  width="206" height="20"
+                  text="Hiển thị dự báo 5 ngày"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="24" y="405"
+                  width="215" height="17"
+                  text="Trên màn hình thời tiết"
+                  style_text_font="be_medium_10"
+                  style_text_color="0x94a3b8" />
+
+        <lv_switch
+            name="weather_cfg_show_forecast"
+            x="252" y="392"
+            width="43" height="23"
+            checked="true"
+        >
+            <style name="weather_cfg_switch_main"
+                   selector="main" />
+
+            <style name="weather_cfg_switch_checked"
+                   selector="indicator|checked" />
+
+            <style name="weather_cfg_switch_knob"
+                   selector="knob" />
+        </lv_switch>
+
+        <!-- SAVE BUTTON -->
+
+        <lv_button
+            name="btn_weather_cfg_save"
+            x="12" y="438"
+            width="296" height="32"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label align="center"
+                      text="Lưu cài đặt thời tiết"
+                      style_text_font="be_semibold_14"
+                      style_text_color="0xffffff" />
+        </lv_button>
+
+    </view>
+</screen>

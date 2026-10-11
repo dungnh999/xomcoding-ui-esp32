@@ -1,0 +1,367 @@
+<screen>
+	<styles>
+		<style
+			name="security_switch_main"
+			bg_color="0x344256"
+			bg_opa="100%"
+			radius="999"
+			pad_all="3"
+			border_width="0"
+		/>
+
+		<style name="security_switch_checked" bg_color="0xa52a26" bg_opa="100%" radius="999" />
+
+		<style
+			name="security_switch_knob"
+			bg_color="0xffffff"
+			bg_opa="100%"
+			radius="999"
+			pad_all="0"
+			border_width="0"
+			shadow_color="0x000000"
+			shadow_opa="25%"
+			shadow_width="4"
+		/>
+	</styles>
+
+	<view
+		width="320"
+		height="480"
+		style_bg_color="0x0b111b"
+		style_bg_opa="100%"
+		style_border_width="0"
+		style_radius="0"
+		style_pad_all="0"
+	>
+		<!-- HEADER -->
+
+		<lv_obj
+			x="12"
+			y="12"
+			width="36"
+			height="36"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="10"
+			style_pad_all="0"
+		/>
+
+		<lv_image x="18" y="18" width="24" height="24" src="ui_back" />
+
+		<lv_label
+			x="58"
+			y="9"
+			width="248"
+			height="28"
+			text="Bảo mật và hệ thống"
+			style_text_font="be_semibold_20"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="59"
+			y="36"
+			width="240"
+			height="17"
+			text="Bảo vệ, cập nhật và bảo trì"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_obj
+			x="12"
+			y="59"
+			width="296"
+			height="1"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- SECURITY SECTION -->
+
+		<lv_label
+			x="13"
+			y="67"
+			width="230"
+			height="19"
+			text="BẢO MẬT THIẾT BỊ"
+			style_text_font="be_semibold_12"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- SECURITY CARD: INCREASED HEIGHT -->
+
+		<lv_obj
+			x="12"
+			y="89"
+			width="296"
+			height="126"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<!-- SCREEN LOCK -->
+
+		<lv_label
+			x="24"
+			y="98"
+			width="197"
+			height="20"
+			text="Khóa màn hình"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="24"
+			y="117"
+			width="199"
+			height="17"
+			text="Yêu cầu PIN khi mở khóa"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_switch name="security_screen_lock_enabled" x="252" y="103" width="43" height="23" checked="false">
+			<style name="security_switch_main" selector="main" />
+			<style name="security_switch_checked" selector="indicator|checked" />
+			<style name="security_switch_knob" selector="knob" />
+		</lv_switch>
+
+		<!-- FIRST DIVIDER -->
+
+		<lv_obj
+			x="24"
+			y="139"
+			width="272"
+			height="1"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- ACCESS AUTHENTICATION -->
+
+		<lv_label
+			x="24"
+			y="149"
+			width="189"
+			height="19"
+			text="Xác thực truy cập"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_switch name="security_auth_enabled" x="252" y="147" width="43" height="23" checked="true">
+			<style name="security_switch_main" selector="main" />
+			<style name="security_switch_checked" selector="indicator|checked" />
+			<style name="security_switch_knob" selector="knob" />
+		</lv_switch>
+
+		<!-- SECOND DIVIDER -->
+
+		<lv_obj
+			x="24"
+			y="178"
+			width="272"
+			height="1"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- CHANGE PIN: INCREASED ROW SPACE -->
+
+		<lv_label
+			x="24"
+			y="188"
+			width="235"
+			height="21"
+			text="Thay đổi mã PIN"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_image x="272" y="185" width="24" height="24" src="ui_next" />
+
+		<!-- FIRMWARE SECTION -->
+
+		<lv_label
+			x="13"
+			y="220"
+			width="230"
+			height="19"
+			text="CẬP NHẬT FIRMWARE"
+			style_text_font="be_semibold_12"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_obj
+			x="12"
+			y="242"
+			width="296"
+			height="69"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<!-- FIRMWARE VERSION -->
+
+		<lv_label
+			x="24"
+			y="249"
+			width="153"
+			height="19"
+			text="Phiên bản hiện tại"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="190"
+			y="249"
+			width="105"
+			height="19"
+			text="v1.0.0"
+			style_text_font="be_medium_12"
+			style_text_align="right"
+			style_text_color="0xe28d88"
+		/>
+
+		<!-- FIRMWARE DIVIDER -->
+
+		<lv_obj
+			x="24"
+			y="274"
+			width="272"
+			height="1"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- OTA -->
+
+		<lv_label
+			x="24"
+			y="282"
+			width="223"
+			height="19"
+			text="Kiểm tra cập nhật OTA"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_image x="272" y="279" width="24" height="24" src="ui_next" />
+
+		<!-- MAINTENANCE -->
+
+		<lv_label
+			x="13"
+			y="316"
+			width="230"
+			height="19"
+			text="BẢO TRÌ HỆ THỐNG"
+			style_text_font="be_semibold_12"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_obj
+			x="12"
+			y="338"
+			width="296"
+			height="91"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<!-- RESTART BUTTON -->
+
+		<lv_button
+			name="btn_security_restart"
+			x="22"
+			y="346"
+			width="274"
+			height="34"
+			style_bg_color="0x233247"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="9"
+			style_shadow_width="0"
+			style_pad_all="0"
+		>
+			<lv_label
+				align="center"
+				text="Khởi động lại thiết bị"
+				style_text_font="be_semibold_14"
+				style_text_color="0xffffff"
+			/>
+		</lv_button>
+
+		<!-- FACTORY RESET BUTTON -->
+
+		<lv_button
+			name="btn_security_reset"
+			x="22"
+			y="387"
+			width="274"
+			height="34"
+			style_bg_color="0x39272a"
+			style_bg_opa="100%"
+			style_border_color="0x70403d"
+			style_border_width="1"
+			style_radius="9"
+			style_shadow_width="0"
+			style_pad_all="0"
+		>
+			<lv_label
+				align="center"
+				text="Khôi phục cài đặt gốc"
+				style_text_font="be_semibold_14"
+				style_text_color="0xe28d88"
+			/>
+		</lv_button>
+
+		<!-- SAVE SETTINGS BUTTON -->
+
+		<lv_button
+			name="btn_security_save"
+			x="12"
+			y="437"
+			width="296"
+			height="34"
+			style_bg_color="0xa52a26"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="10"
+			style_shadow_width="0"
+			style_pad_all="0"
+		>
+			<lv_label
+				align="center"
+				text="Lưu cài đặt bảo mật"
+				style_text_font="be_semibold_14"
+				style_text_color="0xffffff"
+			/>
+		</lv_button>
+	</view>
+</screen>

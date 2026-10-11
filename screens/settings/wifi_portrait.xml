@@ -1,0 +1,339 @@
+
+<screen>
+    <view width="320" height="480"
+          style_bg_color="0x0b111b"
+          style_bg_opa="100%"
+          style_border_width="0"
+          style_radius="0"
+          style_pad_all="0">
+
+        <!-- HEADER -->
+
+        <lv_obj x="12" y="12" width="36" height="36"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="10"
+                style_pad_all="0" />
+
+        <lv_image x="18" y="18"
+                  width="24" height="24"
+                  src="ui_back" />
+
+        <lv_label x="58" y="8"
+                  width="235" height="30"
+                  text="Wi-Fi và Mạng"
+                  style_text_font="be_semibold_20"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="59" y="36"
+                  width="230" height="17"
+                  text="Cấu hình kết nối ESP32-S3"
+                  style_text_font="be_medium_11"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="59"
+                width="296" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- CONNECTION STATUS -->
+
+        <lv_obj x="12" y="68"
+                width="296" height="93"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="12"
+                style_pad_all="0" />
+
+        <lv_obj x="22" y="79"
+                width="43" height="43"
+                style_bg_color="0x213247"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_radius="11"
+                style_pad_all="0" />
+
+        <lv_image x="29" y="86"
+                  width="28" height="28"
+                  src="boot_icon_wifi" />
+
+        <lv_label x="75" y="76"
+                  width="163" height="19"
+                  text="Đã kết nối"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x34d399" />
+
+        <lv_label x="75" y="96"
+                  width="163" height="22"
+                  text="XomCoding_5G"
+                  style_text_font="be_semibold_14"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="75" y="120"
+                  width="164" height="17"
+                  text="Tín hiệu tốt · -48 dBm"
+                  style_text_font="be_medium_11"
+                  style_text_color="0x94a3b8" />
+
+        <!-- WIFI SWITCH -->
+
+        <lv_switch
+            name="wifi_enabled"
+            x="249" y="89"
+            width="46" height="24"
+        />
+
+        <lv_obj x="22" y="140"
+                width="274" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <lv_label x="23" y="142"
+                  width="269" height="16"
+                  text="MAC: A4:CF:12:34:56:78"
+                  style_text_font="be_medium_10"
+                  style_text_color="0x94a3b8" />
+
+        <!-- WIRELESS NETWORK -->
+
+        <lv_label x="13" y="167"
+                  width="220" height="19"
+                  text="MẠNG KHÔNG DÂY"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="190"
+                width="296" height="48"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="10"
+                style_pad_all="0" />
+
+        <lv_label x="24" y="195"
+                  width="227" height="20"
+                  text="Thay đổi mạng Wi-Fi"
+                  style_text_font="be_semibold_14"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="24" y="217"
+                  width="228" height="17"
+                  text="Quét SSID và nhập mật khẩu"
+                  style_text_font="be_medium_11"
+                  style_text_color="0x94a3b8" />
+
+        <lv_image x="271" y="202"
+                  width="24" height="24"
+                  src="ui_next" />
+
+        <!-- IP CONFIGURATION -->
+
+        <lv_label x="13" y="245"
+                  width="220" height="19"
+                  text="CẤU HÌNH IP"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="268"
+                width="296" height="43"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="10"
+                style_pad_all="0" />
+
+        <lv_label x="24" y="279"
+                  width="112" height="21"
+                  text="Chế độ IP"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <!-- DHCP BUTTON - SELECTED -->
+
+        <lv_button
+            name="btn_ip_dhcp"
+            x="153" y="275"
+            width="70" height="29"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="DHCP"
+                style_text_font="be_semibold_12"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+        <!-- STATIC IP BUTTON - INACTIVE -->
+
+        <lv_button
+            name="btn_ip_static"
+            x="228" y="275"
+            width="70" height="29"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="IP tĩnh"
+                style_text_font="be_medium_12"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <!-- NETWORK DETAIL PANEL -->
+
+        <lv_obj x="12" y="319"
+                width="296" height="105"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="10"
+                style_pad_all="0" />
+
+        <!-- IP ADDRESS -->
+
+        <lv_label x="24" y="324"
+                  width="110" height="19"
+                  text="Địa chỉ IP"
+                  style_text_font="be_medium_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_label x="137" y="324"
+                  width="158" height="19"
+                  text="192.168.1.105"
+                  style_text_font="be_medium_12"
+                  style_text_align="right"
+                  style_text_color="0xffffff" />
+
+        <lv_obj x="24" y="345"
+                width="272" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- GATEWAY -->
+
+        <lv_label x="24" y="349"
+                  width="110" height="19"
+                  text="Gateway"
+                  style_text_font="be_medium_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_label x="137" y="349"
+                  width="158" height="19"
+                  text="192.168.1.1"
+                  style_text_font="be_medium_12"
+                  style_text_align="right"
+                  style_text_color="0xffffff" />
+
+        <lv_obj x="24" y="370"
+                width="272" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- SUBNET MASK -->
+
+        <lv_label x="24" y="374"
+                  width="110" height="19"
+                  text="Subnet Mask"
+                  style_text_font="be_medium_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_label x="137" y="374"
+                  width="158" height="19"
+                  text="255.255.255.0"
+                  style_text_font="be_medium_12"
+                  style_text_align="right"
+                  style_text_color="0xffffff" />
+
+        <lv_obj x="24" y="395"
+                width="272" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- DNS -->
+
+        <lv_label x="24" y="399"
+                  width="110" height="19"
+                  text="DNS"
+                  style_text_font="be_medium_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_label x="137" y="399"
+                  width="158" height="19"
+                  text="1.1.1.1"
+                  style_text_font="be_medium_12"
+                  style_text_align="right"
+                  style_text_color="0xffffff" />
+
+        <!-- SCAN BUTTON -->
+
+        <lv_button
+            name="btn_scan_wifi"
+            x="12" y="432"
+            width="140" height="38"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Quét mạng"
+                style_text_font="be_semibold_14"
+                style_text_color="0xe2e8f0"
+            />
+        </lv_button>
+
+        <!-- SAVE BUTTON -->
+
+        <lv_button
+            name="btn_save_wifi"
+            x="160" y="432"
+            width="148" height="38"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu cài đặt"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

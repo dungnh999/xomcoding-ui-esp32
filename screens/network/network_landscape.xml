@@ -1,0 +1,631 @@
+<screen>
+	<view
+		width="480"
+		height="320"
+		style_bg_color="0x0b111b"
+		style_bg_opa="100%"
+		style_border_width="0"
+		style_radius="0"
+		style_pad_all="0"
+	>
+		<!-- ========================= -->
+		<!-- HEADER -->
+		<!-- ========================= -->
+
+		<lv_label
+			x="12"
+			y="3"
+			width="175"
+			height="34"
+			text="Mạng &amp; Wi-Fi"
+			style_text_font="be_semibold_20"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="191"
+			y="13"
+			width="144"
+			height="18"
+			text="Chi tiết kết nối"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- ONLINE DOT -->
+		<lv_obj
+			x="402"
+			y="19"
+			width="6"
+			height="6"
+			style_bg_color="0x34d399"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<!-- ONLINE TEXT -->
+		<lv_label
+			x="415"
+			y="12"
+			width="53"
+			height="19"
+			text="Online"
+			style_text_font="be_medium_12"
+			style_text_align="right"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- HEADER DIVIDER -->
+		<lv_obj
+			x="10"
+			y="41"
+			width="460"
+			height="1"
+			style_bg_color="0x273345"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- ========================= -->
+		<!-- WIFI CONNECTION -->
+		<!-- LEFT TOP -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="10"
+			y="50"
+			width="226"
+			height="91"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="12"
+			style_pad_all="0"
+		/>
+
+		<lv_image
+			x="22"
+			y="60"
+			width="20"
+			height="20"
+			src="boot_icon_wifi"
+			style_image_recolor="0x38bdf8"
+			style_image_recolor_opa="100%"
+		/>
+
+		<lv_label
+			x="49"
+			y="60"
+			width="119"
+			height="20"
+			text="Kết nối Wi-Fi"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_obj
+			x="176"
+			y="67"
+			width="5"
+			height="5"
+			style_bg_color="0x34d399"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="186"
+			y="60"
+			width="38"
+			height="18"
+			text="Online"
+			style_text_font="be_medium_10"
+			style_text_align="right"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- DIVIDER -->
+		<lv_obj
+			x="22"
+			y="85"
+			width="202"
+			height="1"
+			style_bg_color="0x334155"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- SSID -->
+		<lv_label
+			x="22"
+			y="92"
+			width="59"
+			height="17"
+			text="Tên Wi-Fi"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="82"
+			y="92"
+			width="142"
+			height="17"
+			text="XomCoding_WiFi"
+			style_text_font="be_medium_11"
+			style_text_align="right"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- IP -->
+		<lv_label
+			x="22"
+			y="114"
+			width="65"
+			height="17"
+			text="Địa chỉ IP"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="88"
+			y="114"
+			width="136"
+			height="17"
+			text="192.168.1.50"
+			style_text_font="be_medium_11"
+			style_text_align="right"
+			style_text_color="0x38bdf8"
+		/>
+
+		<!-- ========================= -->
+		<!-- SIGNAL CARD -->
+		<!-- LEFT MIDDLE -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="10"
+			y="149"
+			width="226"
+			height="70"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="12"
+			style_pad_all="0"
+		/>
+
+		<lv_image
+			x="22"
+			y="159"
+			width="18"
+			height="18"
+			src="boot_icon_wifi"
+			style_image_recolor="0x38bdf8"
+			style_image_recolor_opa="100%"
+		/>
+
+		<lv_label
+			x="47"
+			y="156"
+			width="148"
+			height="19"
+			text="Cường độ tín hiệu"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="196"
+			y="159"
+			width="28"
+			height="18"
+			text="Tốt"
+			style_text_font="be_medium_11"
+			style_text_align="right"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- RSSI -->
+		<lv_label
+			x="22"
+			y="183"
+			width="111"
+			height="17"
+			text="RSSI: -56 dBm"
+			style_text_font="be_medium_10"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="145"
+			y="183"
+			width="79"
+			height="17"
+			text="2.4 GHz"
+			style_text_font="be_medium_10"
+			style_text_align="right"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- SIGNAL TRACK -->
+		<lv_obj
+			x="22"
+			y="205"
+			width="202"
+			height="5"
+			style_bg_color="0x344256"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<!-- SIGNAL LEVEL -->
+		<lv_obj
+			x="22"
+			y="205"
+			width="152"
+			height="5"
+			style_bg_color="0x38bdf8"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<!-- ========================= -->
+		<!-- NETWORK TRAFFIC -->
+		<!-- LEFT BOTTOM -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="10"
+			y="227"
+			width="226"
+			height="79"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="12"
+			style_pad_all="0"
+		/>
+
+		<lv_image x="22" y="237" width="18" height="18" src="home_icon_network" />
+
+		<lv_label
+			x="47"
+			y="235"
+			width="133"
+			height="19"
+			text="Lưu lượng mạng"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_obj
+			x="185"
+			y="244"
+			width="5"
+			height="5"
+			style_bg_color="0x34d399"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="194"
+			y="237"
+			width="30"
+			height="18"
+			text="Live"
+			style_text_font="be_medium_10"
+			style_text_align="right"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- TRAFFIC DIVIDER -->
+		<lv_obj
+			x="22"
+			y="260"
+			width="202"
+			height="1"
+			style_bg_color="0x334155"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- DOWNLOAD -->
+		<lv_label
+			x="22"
+			y="266"
+			width="95"
+			height="16"
+			text="Tải xuống"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="22"
+			y="283"
+			width="95"
+			height="18"
+			text="125 KB/s"
+			style_text_font="be_semibold_12"
+			style_text_color="0xff6464"
+		/>
+
+		<!-- CENTER DIVIDER -->
+		<lv_obj
+			x="122"
+			y="267"
+			width="1"
+			height="32"
+			style_bg_color="0x334155"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- UPLOAD -->
+		<lv_label
+			x="132"
+			y="266"
+			width="92"
+			height="16"
+			text="Tải lên"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="132"
+			y="283"
+			width="92"
+			height="18"
+			text="42 KB/s"
+			style_text_font="be_semibold_12"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- ========================= -->
+		<!-- NETWORK INFORMATION -->
+		<!-- RIGHT TOP -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="244"
+			y="50"
+			width="226"
+			height="169"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="12"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="256"
+			y="61"
+			width="200"
+			height="20"
+			text="Thông tin mạng"
+			style_text_font="be_semibold_14"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- HEADER DIVIDER -->
+		<lv_obj
+			x="256"
+			y="87"
+			width="202"
+			height="1"
+			style_bg_color="0x334155"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- GATEWAY -->
+		<lv_label
+			x="256"
+			y="97"
+			width="100"
+			height="18"
+			text="Gateway"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="360"
+			y="97"
+			width="98"
+			height="18"
+			text="192.168.1.1"
+			style_text_font="be_medium_11"
+			style_text_align="right"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<!-- DNS -->
+		<lv_label
+			x="256"
+			y="120"
+			width="100"
+			height="18"
+			text="DNS"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="360"
+			y="120"
+			width="98"
+			height="18"
+			text="8.8.8.8"
+			style_text_font="be_medium_11"
+			style_text_align="right"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<!-- MAC -->
+		<lv_label
+			x="256"
+			y="143"
+			width="101"
+			height="18"
+			text="Địa chỉ MAC"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="348"
+			y="143"
+			width="110"
+			height="18"
+			text="A4:CF:12:AB:CD:EF"
+			style_text_font="be_medium_10"
+			style_text_align="right"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<!-- CONNECTION DIVIDER -->
+		<lv_obj
+			x="256"
+			y="169"
+			width="202"
+			height="1"
+			style_bg_color="0x334155"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- NETWORK TYPE -->
+		<lv_label
+			x="256"
+			y="179"
+			width="100"
+			height="18"
+			text="Giao thức"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="358"
+			y="179"
+			width="100"
+			height="18"
+			text="DHCP"
+			style_text_font="be_semibold_12"
+			style_text_align="right"
+			style_text_color="0x38bdf8"
+		/>
+
+		<!-- ========================= -->
+		<!-- CONNECTION STATUS -->
+		<!-- RIGHT BOTTOM -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="244"
+			y="227"
+			width="226"
+			height="79"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="12"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="256"
+			y="237"
+			width="149"
+			height="19"
+			text="Trạng thái kết nối"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- STATUS DOT -->
+		<lv_obj
+			x="419"
+			y="244"
+			width="5"
+			height="5"
+			style_bg_color="0x34d399"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="430"
+			y="237"
+			width="28"
+			height="18"
+			text="OK"
+			style_text_font="be_medium_11"
+			style_text_align="right"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- DIVIDER -->
+		<lv_obj
+			x="256"
+			y="261"
+			width="202"
+			height="1"
+			style_bg_color="0x334155"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- CONNECTION UPTIME -->
+		<lv_label
+			x="256"
+			y="270"
+			width="97"
+			height="17"
+			text="Thời gian kết nối"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="358"
+			y="270"
+			width="100"
+			height="17"
+			text="12 ngày 6 giờ"
+			style_text_font="be_semibold_12"
+			style_text_align="right"
+			style_text_color="0xffffff"
+		/>
+	</view>
+</screen>

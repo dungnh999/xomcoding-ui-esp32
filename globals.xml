@@ -1,0 +1,570 @@
+<globals>
+	<api>
+		<!-- Global API -->
+	</api>
+	<consts>
+		<!-- Global constants -->
+	</consts>
+	<subjects>
+		<!-- Global subjects -->
+	</subjects>
+	<images>
+		<!-- Original names preserved: existing layout references remain valid -->
+		<data name="xom_boot_logo" src_path="images/xom_boot_logo.png" color_format="rgb565a8" />
+		<data name="xom_boot_logo_landscape" src_path="images/xom_boot_logo_landscape.png" color_format="rgb565a8" />
+		<data name="boot_bg" src_path="images/boot_bg.png" color_format="rgb565a8" />
+		<data name="boot_icon_wifi" src_path="images/icon/ui/boot_icon_wifi_28.png" color_format="rgb565a8" />
+		<data name="boot_icon_weather" src_path="images/icon/ui/boot_icon_weather_28.png" color_format="rgb565a8" />
+		<data name="boot_icon_nas" src_path="images/icon/ui/boot_icon_nas_28.png" color_format="rgb565a8" />
+		<data name="home_icon_cpu" src_path="images/icon/system/home_icon_cpu_18.png" color_format="rgb565a8" />
+		<data name="home_icon_ram" src_path="images/icon/system/home_icon_ram_18.png" color_format="rgb565a8" />
+		<data name="home_icon_storage" src_path="images/icon/system/home_icon_storage_18.png" color_format="rgb565a8" />
+		<data name="home_icon_network" src_path="images/icon/ui/home_icon_network_18.png" color_format="rgb565a8" />
+		<data name="weather_sun" src_path="images/icon/weather/weather_sun_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_cloud_sun"
+			src_path="images/icon/weather/weather_cloud_sun_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_cloudy" src_path="images/icon/weather/weather_cloudy_64.png" color_format="rgb565a8" />
+		<data name="weather_cloud" src_path="images/icon/weather/weather_cloud_64.png" color_format="rgb565a8" />
+		<data name="weather_moon" src_path="images/icon/weather/weather_moon_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_cloud_moon"
+			src_path="images/icon/weather/weather_cloud_moon_64.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_partly_night"
+			src_path="images/icon/weather/weather_partly_night_64.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_night_clear"
+			src_path="images/icon/weather/weather_night_clear_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_rain" src_path="images/icon/weather/weather_rain_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_heavy_rain"
+			src_path="images/icon/weather/weather_heavy_rain_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_storm" src_path="images/icon/weather/weather_storm_64.png" color_format="rgb565a8" />
+		<data name="weather_snow" src_path="images/icon/weather/weather_snow_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_heavy_snow"
+			src_path="images/icon/weather/weather_heavy_snow_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_fog" src_path="images/icon/weather/weather_fog_64.png" color_format="rgb565a8" />
+		<data name="weather_haze" src_path="images/icon/weather/weather_haze_64.png" color_format="rgb565a8" />
+		<data name="weather_wind" src_path="images/icon/weather/weather_wind_64.png" color_format="rgb565a8" />
+		<data name="weather_hot" src_path="images/icon/weather/weather_hot_64.png" color_format="rgb565a8" />
+		<data name="weather_cold" src_path="images/icon/weather/weather_cold_64.png" color_format="rgb565a8" />
+		<data name="weather_unknown" src_path="images/icon/weather/weather_unknown_64.png" color_format="rgb565a8" />
+		<data name="forecast_sun" src_path="images/icon/weather/weather_sun_32.png" color_format="rgb565a8" />
+		<data name="forecast_cloud" src_path="images/icon/weather/weather_cloud_32.png" color_format="rgb565a8" />
+		<data name="forecast_cloudy" src_path="images/icon/weather/weather_cloudy_32.png" color_format="rgb565a8" />
+
+		<data name="forecast_cloudy_64" src_path="images/icon/weather/weather_cloudy_64.png" color_format="rgb565a8" />
+		<data
+			name="forecast_cloud_sun"
+			src_path="images/icon/weather/weather_cloud_sun_32.png"
+			color_format="rgb565a8"
+		/>
+		<data name="forecast_rain" src_path="images/icon/weather/weather_rain_32.png" color_format="rgb565a8" />
+		<data
+			name="forecast_heavy_rain"
+			src_path="images/icon/weather/weather_heavy_rain_32.png"
+			color_format="rgb565a8"
+		/>
+		<data name="forecast_storm" src_path="images/icon/weather/weather_storm_32.png" color_format="rgb565a8" />
+		<data name="forecast_moon" src_path="images/icon/weather/weather_moon_32.png" color_format="rgb565a8" />
+		<data
+			name="forecast_cloud_moon"
+			src_path="images/icon/weather/weather_cloud_moon_32.png"
+			color_format="rgb565a8"
+		/>
+		<data name="forecast_snow" src_path="images/icon/weather/weather_snow_32.png" color_format="rgb565a8" />
+		<data name="forecast_fog" src_path="images/icon/weather/weather_fog_32.png" color_format="rgb565a8" />
+		<data name="weather_metric_rain" src_path="images/icon/weather/weather_rain_32.png" color_format="rgb565a8" />
+		<data
+			name="weather_metric_rain_chance"
+			src_path="images/icon/weather/weather_rain_chance_32.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_metric_wind" src_path="images/icon/weather/weather_wind_32.png" color_format="rgb565a8" />
+		<data
+			name="weather_metric_humidity"
+			src_path="images/icon/weather/weather_humidity_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_metric_temperature"
+			src_path="images/icon/weather/weather_temperature_32.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_metric_uv" src_path="images/icon/weather/weather_uv_32.png" color_format="rgb565a8" />
+		<data name="system_chip" src_path="images/icon/system/system_chip_24.png" color_format="rgb565a8" />
+		<data name="system_psram" src_path="images/icon/system/system_psram_24.png" color_format="rgb565a8" />
+		<data name="system_temp" src_path="images/icon/system/system_temp_24.png" color_format="rgb565a8" />
+		<data name="system_uptime" src_path="images/icon/system/system_uptime_24.png" color_format="rgb565a8" />
+		<data name="nas_icon" src_path="images/icon/ui/home_icon_nas_24.png" color_format="rgb565a8" />
+		<data name="nas_disk" src_path="images/icon/ui/storage_disk_24.png" color_format="rgb565a8" />
+		<data name="network_router" src_path="images/icon/ui/network_router_24.png" color_format="rgb565a8" />
+		<data name="network_signal" src_path="images/icon/ui/network_signal_24.png" color_format="rgb565a8" />
+		<data name="network_dns" src_path="images/icon/ui/network_dns_24.png" color_format="rgb565a8" />
+		<data name="network_globe" src_path="images/icon/ui/network_globe_24.png" color_format="rgb565a8" />
+		<data name="network_upload" src_path="images/icon/ui/home_upload_24.png" color_format="rgb565a8" />
+		<data name="network_download" src_path="images/icon/ui/home_download_24.png" color_format="rgb565a8" />
+		<data name="ui_back" src_path="images/icon/ui/nav_back_24.png" color_format="rgb565a8" />
+		<data name="ui_next" src_path="images/icon/ui/nav_next_24.png" color_format="rgb565a8" />
+		<data name="ui_settings" src_path="images/icon/ui/nav_settings_24.png" color_format="rgb565a8" />
+		<data name="ui_location" src_path="images/icon/ui/nav_location_24.png" color_format="rgb565a8" />
+		<data name="ui_clock" src_path="images/icon/ui/nav_clock_24.png" color_format="rgb565a8" />
+		<data name="ui_battery" src_path="images/icon/ui/home_battery_24.png" color_format="rgb565a8" />
+		<data name="status_ok" src_path="images/icon/ui/status_ok_24.png" color_format="rgb565a8" />
+		<data name="status_warning" src_path="images/icon/ui/status_warning_24.png" color_format="rgb565a8" />
+		<data name="status_offline" src_path="images/icon/ui/status_offline_24.png" color_format="rgb565a8" />
+		<data name="weather_bg_sunny" src_path="images/weather/weather_bg_sunny.png" color_format="rgb565a8" />
+		<data name="weather_bg_cloudy" src_path="images/weather/weather_bg_cloudy.png" color_format="rgb565a8" />
+		<data name="weather_bg_rain" src_path="images/weather/weather_bg_rain.png" color_format="rgb565a8" />
+		<data name="weather_bg_storm" src_path="images/weather/weather_bg_storm.png" color_format="rgb565a8" />
+		<data
+			name="weather_bg_night_clear"
+			src_path="images/weather/weather_bg_night_clear.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_bg_fog" src_path="images/weather/weather_bg_fog.png" color_format="rgb565a8" />
+
+		<!-- Explicit size variants, only for PNG files present in the icon pack -->
+		<!-- SYSTEM : all available sizes -->
+		<data name="home_icon_cpu_18" src_path="images/icon/system/home_icon_cpu_18.png" color_format="rgb565a8" />
+		<data name="home_icon_cpu_24" src_path="images/icon/system/home_icon_cpu_24.png" color_format="rgb565a8" />
+		<data name="home_icon_cpu_28" src_path="images/icon/system/home_icon_cpu_28.png" color_format="rgb565a8" />
+		<data name="home_icon_cpu_32" src_path="images/icon/system/home_icon_cpu_32.png" color_format="rgb565a8" />
+		<data name="home_icon_ram_18" src_path="images/icon/system/home_icon_ram_18.png" color_format="rgb565a8" />
+		<data name="home_icon_ram_24" src_path="images/icon/system/home_icon_ram_24.png" color_format="rgb565a8" />
+		<data name="home_icon_ram_28" src_path="images/icon/system/home_icon_ram_28.png" color_format="rgb565a8" />
+		<data name="home_icon_ram_32" src_path="images/icon/system/home_icon_ram_32.png" color_format="rgb565a8" />
+		<data
+			name="home_icon_storage_18"
+			src_path="images/icon/system/home_icon_storage_18.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="home_icon_storage_24"
+			src_path="images/icon/system/home_icon_storage_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="home_icon_storage_28"
+			src_path="images/icon/system/home_icon_storage_28.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="home_icon_storage_32"
+			src_path="images/icon/system/home_icon_storage_32.png"
+			color_format="rgb565a8"
+		/>
+		<data name="system_chip_18" src_path="images/icon/system/system_chip_18.png" color_format="rgb565a8" />
+		<data name="system_chip_24" src_path="images/icon/system/system_chip_24.png" color_format="rgb565a8" />
+		<data name="system_chip_28" src_path="images/icon/system/system_chip_28.png" color_format="rgb565a8" />
+		<data name="system_chip_32" src_path="images/icon/system/system_chip_32.png" color_format="rgb565a8" />
+		<data name="system_psram_18" src_path="images/icon/system/system_psram_18.png" color_format="rgb565a8" />
+		<data name="system_psram_24" src_path="images/icon/system/system_psram_24.png" color_format="rgb565a8" />
+		<data name="system_psram_28" src_path="images/icon/system/system_psram_28.png" color_format="rgb565a8" />
+		<data name="system_psram_32" src_path="images/icon/system/system_psram_32.png" color_format="rgb565a8" />
+		<data name="system_temp_18" src_path="images/icon/system/system_temp_18.png" color_format="rgb565a8" />
+		<data name="system_temp_24" src_path="images/icon/system/system_temp_24.png" color_format="rgb565a8" />
+		<data name="system_temp_28" src_path="images/icon/system/system_temp_28.png" color_format="rgb565a8" />
+		<data name="system_temp_32" src_path="images/icon/system/system_temp_32.png" color_format="rgb565a8" />
+		<data name="system_uptime_18" src_path="images/icon/system/system_uptime_18.png" color_format="rgb565a8" />
+		<data name="system_uptime_24" src_path="images/icon/system/system_uptime_24.png" color_format="rgb565a8" />
+		<data name="system_uptime_28" src_path="images/icon/system/system_uptime_28.png" color_format="rgb565a8" />
+		<data name="system_uptime_32" src_path="images/icon/system/system_uptime_32.png" color_format="rgb565a8" />
+		<!-- UI : all available sizes -->
+		<data name="boot_icon_nas_24" src_path="images/icon/ui/boot_icon_nas_24.png" color_format="rgb565a8" />
+		<data name="boot_icon_nas_28" src_path="images/icon/ui/boot_icon_nas_28.png" color_format="rgb565a8" />
+		<data name="boot_icon_weather_24" src_path="images/icon/ui/boot_icon_weather_24.png" color_format="rgb565a8" />
+		<data name="boot_icon_weather_28" src_path="images/icon/ui/boot_icon_weather_28.png" color_format="rgb565a8" />
+		<data name="boot_icon_wifi_24" src_path="images/icon/ui/boot_icon_wifi_24.png" color_format="rgb565a8" />
+		<data name="boot_icon_wifi_28" src_path="images/icon/ui/boot_icon_wifi_28.png" color_format="rgb565a8" />
+		<data name="home_battery_18" src_path="images/icon/ui/home_battery_18.png" color_format="rgb565a8" />
+		<data name="home_battery_24" src_path="images/icon/ui/home_battery_24.png" color_format="rgb565a8" />
+		<data name="home_battery_28" src_path="images/icon/ui/home_battery_28.png" color_format="rgb565a8" />
+		<data name="home_battery_32" src_path="images/icon/ui/home_battery_32.png" color_format="rgb565a8" />
+		<data name="home_download_18" src_path="images/icon/ui/home_download_18.png" color_format="rgb565a8" />
+		<data name="home_download_24" src_path="images/icon/ui/home_download_24.png" color_format="rgb565a8" />
+		<data name="home_download_28" src_path="images/icon/ui/home_download_28.png" color_format="rgb565a8" />
+		<data name="home_download_32" src_path="images/icon/ui/home_download_32.png" color_format="rgb565a8" />
+		<data name="home_icon_flash_18" src_path="images/icon/ui/home_icon_flash_18.png" color_format="rgb565a8" />
+		<data name="home_icon_flash_24" src_path="images/icon/ui/home_icon_flash_24.png" color_format="rgb565a8" />
+		<data name="home_icon_flash_28" src_path="images/icon/ui/home_icon_flash_28.png" color_format="rgb565a8" />
+		<data name="home_icon_flash_32" src_path="images/icon/ui/home_icon_flash_32.png" color_format="rgb565a8" />
+		<data name="home_icon_nas_18" src_path="images/icon/ui/home_icon_nas_18.png" color_format="rgb565a8" />
+		<data name="home_icon_nas_24" src_path="images/icon/ui/home_icon_nas_24.png" color_format="rgb565a8" />
+		<data name="home_icon_nas_28" src_path="images/icon/ui/home_icon_nas_28.png" color_format="rgb565a8" />
+		<data name="home_icon_nas_32" src_path="images/icon/ui/home_icon_nas_32.png" color_format="rgb565a8" />
+		<data name="home_icon_network_18" src_path="images/icon/ui/home_icon_network_18.png" color_format="rgb565a8" />
+		<data name="home_icon_network_24" src_path="images/icon/ui/home_icon_network_24.png" color_format="rgb565a8" />
+		<data name="home_icon_network_28" src_path="images/icon/ui/home_icon_network_28.png" color_format="rgb565a8" />
+		<data name="home_icon_network_32" src_path="images/icon/ui/home_icon_network_32.png" color_format="rgb565a8" />
+		<data name="home_upload_18" src_path="images/icon/ui/home_upload_18.png" color_format="rgb565a8" />
+		<data name="home_upload_24" src_path="images/icon/ui/home_upload_24.png" color_format="rgb565a8" />
+		<data name="home_upload_28" src_path="images/icon/ui/home_upload_28.png" color_format="rgb565a8" />
+		<data name="home_upload_32" src_path="images/icon/ui/home_upload_32.png" color_format="rgb565a8" />
+		<data name="nav_back_18" src_path="images/icon/ui/nav_back_18.png" color_format="rgb565a8" />
+		<data name="nav_back_24" src_path="images/icon/ui/nav_back_24.png" color_format="rgb565a8" />
+		<data name="nav_back_28" src_path="images/icon/ui/nav_back_28.png" color_format="rgb565a8" />
+		<data name="nav_back_32" src_path="images/icon/ui/nav_back_32.png" color_format="rgb565a8" />
+		<data name="nav_clock_18" src_path="images/icon/ui/nav_clock_18.png" color_format="rgb565a8" />
+		<data name="nav_clock_24" src_path="images/icon/ui/nav_clock_24.png" color_format="rgb565a8" />
+		<data name="nav_clock_28" src_path="images/icon/ui/nav_clock_28.png" color_format="rgb565a8" />
+		<data name="nav_clock_32" src_path="images/icon/ui/nav_clock_32.png" color_format="rgb565a8" />
+		<data name="nav_location_18" src_path="images/icon/ui/nav_location_18.png" color_format="rgb565a8" />
+		<data name="nav_location_24" src_path="images/icon/ui/nav_location_24.png" color_format="rgb565a8" />
+		<data name="nav_location_28" src_path="images/icon/ui/nav_location_28.png" color_format="rgb565a8" />
+		<data name="nav_location_32" src_path="images/icon/ui/nav_location_32.png" color_format="rgb565a8" />
+		<data name="nav_next_18" src_path="images/icon/ui/nav_next_18.png" color_format="rgb565a8" />
+		<data name="nav_next_24" src_path="images/icon/ui/nav_next_24.png" color_format="rgb565a8" />
+		<data name="nav_next_28" src_path="images/icon/ui/nav_next_28.png" color_format="rgb565a8" />
+		<data name="nav_next_32" src_path="images/icon/ui/nav_next_32.png" color_format="rgb565a8" />
+		<data name="nav_settings_18" src_path="images/icon/ui/nav_settings_18.png" color_format="rgb565a8" />
+		<data name="nav_settings_24" src_path="images/icon/ui/nav_settings_24.png" color_format="rgb565a8" />
+		<data name="nav_settings_28" src_path="images/icon/ui/nav_settings_28.png" color_format="rgb565a8" />
+		<data name="nav_settings_32" src_path="images/icon/ui/nav_settings_32.png" color_format="rgb565a8" />
+		<data name="network_dns_18" src_path="images/icon/ui/network_dns_18.png" color_format="rgb565a8" />
+		<data name="network_dns_24" src_path="images/icon/ui/network_dns_24.png" color_format="rgb565a8" />
+		<data name="network_dns_28" src_path="images/icon/ui/network_dns_28.png" color_format="rgb565a8" />
+		<data name="network_dns_32" src_path="images/icon/ui/network_dns_32.png" color_format="rgb565a8" />
+		<data name="network_globe_18" src_path="images/icon/ui/network_globe_18.png" color_format="rgb565a8" />
+		<data name="network_globe_24" src_path="images/icon/ui/network_globe_24.png" color_format="rgb565a8" />
+		<data name="network_globe_28" src_path="images/icon/ui/network_globe_28.png" color_format="rgb565a8" />
+		<data name="network_globe_32" src_path="images/icon/ui/network_globe_32.png" color_format="rgb565a8" />
+		<data name="network_router_18" src_path="images/icon/ui/network_router_18.png" color_format="rgb565a8" />
+		<data name="network_router_24" src_path="images/icon/ui/network_router_24.png" color_format="rgb565a8" />
+		<data name="network_router_28" src_path="images/icon/ui/network_router_28.png" color_format="rgb565a8" />
+		<data name="network_router_32" src_path="images/icon/ui/network_router_32.png" color_format="rgb565a8" />
+		<data name="network_signal_18" src_path="images/icon/ui/network_signal_18.png" color_format="rgb565a8" />
+		<data name="network_signal_24" src_path="images/icon/ui/network_signal_24.png" color_format="rgb565a8" />
+		<data name="network_signal_28" src_path="images/icon/ui/network_signal_28.png" color_format="rgb565a8" />
+		<data name="network_signal_32" src_path="images/icon/ui/network_signal_32.png" color_format="rgb565a8" />
+		<data name="status_offline_18" src_path="images/icon/ui/status_offline_18.png" color_format="rgb565a8" />
+		<data name="status_offline_24" src_path="images/icon/ui/status_offline_24.png" color_format="rgb565a8" />
+		<data name="status_offline_28" src_path="images/icon/ui/status_offline_28.png" color_format="rgb565a8" />
+		<data name="status_offline_32" src_path="images/icon/ui/status_offline_32.png" color_format="rgb565a8" />
+		<data name="status_ok_18" src_path="images/icon/ui/status_ok_18.png" color_format="rgb565a8" />
+		<data name="status_ok_24" src_path="images/icon/ui/status_ok_24.png" color_format="rgb565a8" />
+		<data name="status_ok_28" src_path="images/icon/ui/status_ok_28.png" color_format="rgb565a8" />
+		<data name="status_ok_32" src_path="images/icon/ui/status_ok_32.png" color_format="rgb565a8" />
+		<data name="status_warning_18" src_path="images/icon/ui/status_warning_18.png" color_format="rgb565a8" />
+		<data name="status_warning_24" src_path="images/icon/ui/status_warning_24.png" color_format="rgb565a8" />
+		<data name="status_warning_28" src_path="images/icon/ui/status_warning_28.png" color_format="rgb565a8" />
+		<data name="status_warning_32" src_path="images/icon/ui/status_warning_32.png" color_format="rgb565a8" />
+		<data name="storage_disk_18" src_path="images/icon/ui/storage_disk_18.png" color_format="rgb565a8" />
+		<data name="storage_disk_24" src_path="images/icon/ui/storage_disk_24.png" color_format="rgb565a8" />
+		<data name="storage_disk_28" src_path="images/icon/ui/storage_disk_28.png" color_format="rgb565a8" />
+		<data name="storage_disk_32" src_path="images/icon/ui/storage_disk_32.png" color_format="rgb565a8" />
+		<!-- WEATHER : all available sizes -->
+		<data name="weather_cloud_24" src_path="images/icon/weather/weather_cloud_24.png" color_format="rgb565a8" />
+		<data name="weather_cloud_32" src_path="images/icon/weather/weather_cloud_32.png" color_format="rgb565a8" />
+		<data name="weather_cloud_64" src_path="images/icon/weather/weather_cloud_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_cloud_moon_24"
+			src_path="images/icon/weather/weather_cloud_moon_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_cloud_moon_32"
+			src_path="images/icon/weather/weather_cloud_moon_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_cloud_moon_64"
+			src_path="images/icon/weather/weather_cloud_moon_64.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_cloud_sun_24"
+			src_path="images/icon/weather/weather_cloud_sun_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_cloud_sun_32"
+			src_path="images/icon/weather/weather_cloud_sun_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_cloud_sun_64"
+			src_path="images/icon/weather/weather_cloud_sun_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_cloudy_24" src_path="images/icon/weather/weather_cloudy_24.png" color_format="rgb565a8" />
+		<data name="weather_cloudy_32" src_path="images/icon/weather/weather_cloudy_32.png" color_format="rgb565a8" />
+		<data name="weather_cloudy_64" src_path="images/icon/weather/weather_cloudy_64.png" color_format="rgb565a8" />
+		<data name="weather_cold_24" src_path="images/icon/weather/weather_cold_24.png" color_format="rgb565a8" />
+		<data name="weather_cold_32" src_path="images/icon/weather/weather_cold_32.png" color_format="rgb565a8" />
+		<data name="weather_cold_64" src_path="images/icon/weather/weather_cold_64.png" color_format="rgb565a8" />
+		<data name="weather_fog_24" src_path="images/icon/weather/weather_fog_24.png" color_format="rgb565a8" />
+		<data name="weather_fog_32" src_path="images/icon/weather/weather_fog_32.png" color_format="rgb565a8" />
+		<data name="weather_fog_64" src_path="images/icon/weather/weather_fog_64.png" color_format="rgb565a8" />
+		<data name="weather_haze_24" src_path="images/icon/weather/weather_haze_24.png" color_format="rgb565a8" />
+		<data name="weather_haze_32" src_path="images/icon/weather/weather_haze_32.png" color_format="rgb565a8" />
+		<data name="weather_haze_64" src_path="images/icon/weather/weather_haze_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_heavy_rain_24"
+			src_path="images/icon/weather/weather_heavy_rain_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_heavy_rain_32"
+			src_path="images/icon/weather/weather_heavy_rain_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_heavy_rain_64"
+			src_path="images/icon/weather/weather_heavy_rain_64.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_heavy_snow_24"
+			src_path="images/icon/weather/weather_heavy_snow_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_heavy_snow_32"
+			src_path="images/icon/weather/weather_heavy_snow_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_heavy_snow_64"
+			src_path="images/icon/weather/weather_heavy_snow_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_hot_24" src_path="images/icon/weather/weather_hot_24.png" color_format="rgb565a8" />
+		<data name="weather_hot_32" src_path="images/icon/weather/weather_hot_32.png" color_format="rgb565a8" />
+		<data name="weather_hot_64" src_path="images/icon/weather/weather_hot_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_humidity_24"
+			src_path="images/icon/weather/weather_humidity_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_humidity_32"
+			src_path="images/icon/weather/weather_humidity_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_humidity_64"
+			src_path="images/icon/weather/weather_humidity_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_moon_24" src_path="images/icon/weather/weather_moon_24.png" color_format="rgb565a8" />
+		<data name="weather_moon_32" src_path="images/icon/weather/weather_moon_32.png" color_format="rgb565a8" />
+		<data name="weather_moon_64" src_path="images/icon/weather/weather_moon_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_night_clear_24"
+			src_path="images/icon/weather/weather_night_clear_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_night_clear_32"
+			src_path="images/icon/weather/weather_night_clear_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_night_clear_64"
+			src_path="images/icon/weather/weather_night_clear_64.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_partly_night_24"
+			src_path="images/icon/weather/weather_partly_night_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_partly_night_32"
+			src_path="images/icon/weather/weather_partly_night_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_partly_night_64"
+			src_path="images/icon/weather/weather_partly_night_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_rain_24" src_path="images/icon/weather/weather_rain_24.png" color_format="rgb565a8" />
+		<data name="weather_rain_32" src_path="images/icon/weather/weather_rain_32.png" color_format="rgb565a8" />
+		<data name="weather_rain_64" src_path="images/icon/weather/weather_rain_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_rain_chance_24"
+			src_path="images/icon/weather/weather_rain_chance_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_rain_chance_32"
+			src_path="images/icon/weather/weather_rain_chance_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_rain_chance_64"
+			src_path="images/icon/weather/weather_rain_chance_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_snow_24" src_path="images/icon/weather/weather_snow_24.png" color_format="rgb565a8" />
+		<data name="weather_snow_32" src_path="images/icon/weather/weather_snow_32.png" color_format="rgb565a8" />
+		<data name="weather_snow_64" src_path="images/icon/weather/weather_snow_64.png" color_format="rgb565a8" />
+		<data name="weather_storm_24" src_path="images/icon/weather/weather_storm_24.png" color_format="rgb565a8" />
+		<data name="weather_storm_32" src_path="images/icon/weather/weather_storm_32.png" color_format="rgb565a8" />
+		<data name="weather_storm_64" src_path="images/icon/weather/weather_storm_64.png" color_format="rgb565a8" />
+		<data name="weather_sun_24" src_path="images/icon/weather/weather_sun_24.png" color_format="rgb565a8" />
+		<data name="weather_sun_32" src_path="images/icon/weather/weather_sun_32.png" color_format="rgb565a8" />
+		<data name="weather_sun_64" src_path="images/icon/weather/weather_sun_64.png" color_format="rgb565a8" />
+		<data
+			name="weather_temperature_24"
+			src_path="images/icon/weather/weather_temperature_24.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_temperature_32"
+			src_path="images/icon/weather/weather_temperature_32.png"
+			color_format="rgb565a8"
+		/>
+		<data
+			name="weather_temperature_64"
+			src_path="images/icon/weather/weather_temperature_64.png"
+			color_format="rgb565a8"
+		/>
+		<data name="weather_unknown_24" src_path="images/icon/weather/weather_unknown_24.png" color_format="rgb565a8" />
+		<data name="weather_unknown_32" src_path="images/icon/weather/weather_unknown_32.png" color_format="rgb565a8" />
+		<data name="weather_unknown_64" src_path="images/icon/weather/weather_unknown_64.png" color_format="rgb565a8" />
+		<data name="weather_uv_24" src_path="images/icon/weather/weather_uv_24.png" color_format="rgb565a8" />
+		<data name="weather_uv_32" src_path="images/icon/weather/weather_uv_32.png" color_format="rgb565a8" />
+		<data name="weather_uv_64" src_path="images/icon/weather/weather_uv_64.png" color_format="rgb565a8" />
+		<data name="weather_wind_24" src_path="images/icon/weather/weather_wind_24.png" color_format="rgb565a8" />
+		<data name="weather_wind_32" src_path="images/icon/weather/weather_wind_32.png" color_format="rgb565a8" />
+		<data name="weather_wind_64" src_path="images/icon/weather/weather_wind_64.png" color_format="rgb565a8" />
+	</images>
+	<fonts>
+		<bin
+			name="be_regular_10"
+			src_path="fonts/BeVietnamPro-Regular.ttf"
+			size="10"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_regular_12"
+			src_path="fonts/BeVietnamPro-Regular.ttf"
+			size="12"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_regular_14"
+			src_path="fonts/BeVietnamPro-Regular.ttf"
+			size="14"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_regular_16"
+			src_path="fonts/BeVietnamPro-Regular.ttf"
+			size="16"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_regular_20"
+			src_path="fonts/BeVietnamPro-Regular.ttf"
+			size="20"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_medium_10"
+			src_path="fonts/BeVietnamPro-Medium.ttf"
+			size="10"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_medium_11"
+			src_path="fonts/BeVietnamPro-Medium.ttf"
+			size="11"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_medium_12"
+			src_path="fonts/BeVietnamPro-Medium.ttf"
+			size="12"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_medium_14"
+			src_path="fonts/BeVietnamPro-Medium.ttf"
+			size="14"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_semibold_12"
+			src_path="fonts/BeVietnamPro-SemiBold.ttf"
+			size="12"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_semibold_14"
+			src_path="fonts/BeVietnamPro-SemiBold.ttf"
+			size="14"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_semibold_16"
+			src_path="fonts/BeVietnamPro-SemiBold.ttf"
+			size="16"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+		<bin
+			name="be_semibold_20"
+			src_path="fonts/BeVietnamPro-SemiBold.ttf"
+			size="20"
+			bpp="4"
+			range="0x20-0x7E,0xA0-0xFF,0x0100-0x017F,0x0180-0x01BF,0x1EA0-0x1EF9"
+			as_file="false"
+		/>
+	</fonts>
+	<styles>
+		<style
+			name="meter_track"
+			arc_color="0x2b384b"
+			arc_width="7"
+			arc_rounded="true"
+			bg_opa="0%"
+			border_width="0"
+			pad_all="0"
+		/>
+		<style name="meter_cpu" arc_color="0xff4b4b" arc_width="7" arc_rounded="true" />
+		<style name="meter_ram" arc_color="0x1ea0ff" arc_width="7" arc_rounded="true" />
+		<style name="meter_flash" arc_color="0xf5b942" arc_width="7" arc_rounded="true" />
+		<style name="meter_knob_hidden" bg_opa="0%" border_width="0" pad_all="0" />
+	</styles>
+</globals>

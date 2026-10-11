@@ -1,0 +1,661 @@
+<screen>
+	<view
+		width="480"
+		height="320"
+		style_bg_color="0x0b111b"
+		style_bg_opa="100%"
+		style_border_width="0"
+		style_radius="0"
+		style_pad_all="0"
+	>
+		<!-- ========================= -->
+		<!-- HEADER -->
+		<!-- ========================= -->
+
+		<!-- TIME -->
+		<lv_label
+			x="12"
+			y="7"
+			width="66"
+			height="25"
+			text="12:34"
+			style_text_font="be_semibold_20"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- DATE - CLOSER TO TIME -->
+		<lv_label
+			x="88"
+			y="13"
+			width="156"
+			height="18"
+			text="T7, 10/10/2026"
+			style_text_font="be_medium_12"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- WIFI -->
+		<lv_image
+			x="379"
+			y="11"
+			width="20"
+			height="20"
+			src="boot_icon_wifi"
+			style_image_recolor="0x38bdf8"
+			style_image_recolor_opa="100%"
+		/>
+
+		<!-- BATTERY PERCENT -->
+		<lv_label
+			x="404"
+			y="12"
+			width="34"
+			height="18"
+			text="85%"
+			style_text_font="be_semibold_12"
+			style_text_align="right"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- BATTERY FRAME -->
+		<lv_obj
+			x="446"
+			y="15"
+			width="20"
+			height="12"
+			style_bg_color="0x0b111b"
+			style_bg_opa="100%"
+			style_border_color="0xcbd5e1"
+			style_border_width="1"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<!-- BATTERY FILL -->
+		<lv_obj
+			x="449"
+			y="18"
+			width="14"
+			height="6"
+			style_bg_color="0x34d399"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="1"
+			style_pad_all="0"
+		/>
+
+		<!-- BATTERY TIP -->
+		<lv_obj
+			x="468"
+			y="18"
+			width="2"
+			height="5"
+			style_bg_color="0xcbd5e1"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- HEADER DIVIDER -->
+		<lv_obj
+			x="10"
+			y="41"
+			width="460"
+			height="1"
+			style_bg_color="0x273345"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- ========================= -->
+		<!-- WEATHER CARD -->
+		<!-- ========================= -->
+
+		<!-- BACKGROUND 296x122 -->
+		<lv_image x="10" y="51" width="296" height="122" src="weather_bg_cloudy" />
+
+		<!-- WEATHER BORDER -->
+		<lv_obj
+			x="10"
+			y="51"
+			width="296"
+			height="122"
+			style_bg_opa="0%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="12"
+			style_pad_all="0"
+		/>
+
+		<!-- WEATHER TITLE -->
+		<lv_label
+			x="22"
+			y="61"
+			width="205"
+			height="18"
+			text="THỜI TIẾT · HÀ NỘI"
+			style_text_font="be_semibold_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<!-- TEMPERATURE -->
+		<lv_label
+			x="22"
+			y="85"
+			width="170"
+			height="29"
+			text="28.5°C"
+			style_text_font="be_semibold_20"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- DESCRIPTION -->
+		<lv_label
+			x="22"
+			y="114"
+			width="166"
+			height="20"
+			text="Trời có mây"
+			style_text_font="be_medium_12"
+			style_text_color="0xf1f5f9"
+		/>
+
+		<!-- WEATHER ICON -->
+		<lv_image x="218" y="73" width="64" height="64" src="weather_cloud_sun" />
+
+		<!-- HIGH TEMPERATURE -->
+		<lv_label
+			x="22"
+			y="149"
+			width="80"
+			height="18"
+			text="Cao 32°C"
+			style_text_font="be_medium_11"
+			style_text_color="0xfb7185"
+		/>
+
+		<!-- LOW TEMPERATURE -->
+		<lv_label
+			x="109"
+			y="149"
+			width="89"
+			height="18"
+			text="Thấp 24°C"
+			style_text_font="be_medium_11"
+			style_text_color="0x60a5fa"
+		/>
+
+		<!-- HUMIDITY -->
+		<lv_label
+			x="208"
+			y="149"
+			width="86"
+			height="18"
+			text="Ẩm 65%"
+			style_text_font="be_medium_11"
+			style_text_align="right"
+			style_text_color="0xcbd5e1"
+		/>
+
+		<!-- ========================= -->
+		<!-- SYNOLOGY NAS CARD -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="314"
+			y="51"
+			width="156"
+			height="122"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="12"
+			style_pad_all="0"
+		/>
+
+		<!-- NAS ICON -->
+		<lv_image x="325" y="62" width="20" height="20" src="boot_icon_nas" />
+
+		<!-- NAS NAME -->
+		<lv_label
+			x="351"
+			y="60"
+			width="108"
+			height="20"
+			text="Synology NAS"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- NAS ONLINE DOT -->
+		<lv_obj
+			x="326"
+			y="92"
+			width="5"
+			height="5"
+			style_bg_color="0x34d399"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<!-- NAS ONLINE TEXT -->
+		<lv_label
+			x="337"
+			y="86"
+			width="68"
+			height="19"
+			text="Online"
+			style_text_font="be_medium_11"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- NAS MODEL AND UPTIME -->
+		<lv_label
+			x="326"
+			y="107"
+			width="134"
+			height="17"
+			text="DS920+ · 12 ngày"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- STORAGE LABEL -->
+		<lv_label
+			x="326"
+			y="129"
+			width="94"
+			height="18"
+			text="Dung lượng"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- STORAGE PERCENT -->
+		<lv_label
+			x="422"
+			y="129"
+			width="38"
+			height="18"
+			text="30%"
+			style_text_font="be_semibold_12"
+			style_text_align="right"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- STORAGE TRACK -->
+		<lv_obj
+			x="326"
+			y="153"
+			width="134"
+			height="7"
+			style_bg_color="0x344256"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="4"
+			style_pad_all="0"
+		/>
+
+		<!-- STORAGE FILL - 30% -->
+		<lv_obj
+			x="326"
+			y="153"
+			width="40"
+			height="7"
+			style_bg_color="0xff6464"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="4"
+			style_pad_all="0"
+		/>
+
+		<!-- ========================= -->
+		<!-- CPU CARD -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="10"
+			y="182"
+			width="94"
+			height="118"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<!-- CPU ICON -->
+		<lv_image x="22" y="191" width="16" height="16" src="home_icon_cpu" />
+
+		<!-- CPU TITLE -->
+		<lv_label
+			x="43"
+			y="188"
+			width="54"
+			height="18"
+			text="CPU"
+			style_text_font="be_semibold_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<!-- CPU ARC -->
+		<lv_arc
+			x="27"
+			y="214"
+			width="60"
+			height="60"
+			min_value="0"
+			max_value="100"
+			value="32"
+			rotation="135"
+			bg_start_angle="0"
+			bg_end_angle="270"
+			mode="normal"
+		>
+			<style name="meter_track" selector="main" />
+			<style name="meter_cpu" selector="indicator" />
+			<style name="meter_knob_hidden" selector="knob" />
+		</lv_arc>
+
+		<!-- CPU PERCENT -->
+		<lv_label
+			x="26"
+			y="230"
+			width="62"
+			height="22"
+			text="32%"
+			style_text_font="be_semibold_16"
+			style_text_align="center"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- CPU SPEED -->
+		<lv_label
+			x="14"
+			y="279"
+			width="86"
+			height="17"
+			text="240 MHz"
+			style_text_font="be_medium_11"
+			style_text_align="center"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- ========================= -->
+		<!-- RAM CARD -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="110"
+			y="182"
+			width="94"
+			height="118"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<!-- RAM ICON -->
+		<lv_image x="122" y="191" width="16" height="16" src="home_icon_ram" />
+
+		<!-- RAM TITLE -->
+		<lv_label
+			x="143"
+			y="188"
+			width="54"
+			height="18"
+			text="RAM"
+			style_text_font="be_semibold_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<!-- RAM ARC -->
+		<lv_arc
+			x="127"
+			y="214"
+			width="60"
+			height="60"
+			min_value="0"
+			max_value="100"
+			value="46"
+			rotation="135"
+			bg_start_angle="0"
+			bg_end_angle="270"
+			mode="normal"
+		>
+			<style name="meter_track" selector="main" />
+			<style name="meter_ram" selector="indicator" />
+			<style name="meter_knob_hidden" selector="knob" />
+		</lv_arc>
+
+		<!-- RAM PERCENT -->
+		<lv_label
+			x="126"
+			y="230"
+			width="62"
+			height="22"
+			text="46%"
+			style_text_font="be_semibold_16"
+			style_text_align="center"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- RAM DETAIL -->
+		<lv_label
+			x="114"
+			y="279"
+			width="86"
+			height="17"
+			text="188 KB"
+			style_text_font="be_medium_11"
+			style_text_align="center"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- ========================= -->
+		<!-- FLASH CARD -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="210"
+			y="182"
+			width="94"
+			height="118"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<!-- FLASH ICON -->
+		<lv_image x="222" y="191" width="16" height="16" src="home_icon_storage" />
+
+		<!-- FLASH TITLE -->
+		<lv_label
+			x="243"
+			y="188"
+			width="55"
+			height="18"
+			text="Flash"
+			style_text_font="be_semibold_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<!-- FLASH ARC -->
+		<lv_arc
+			x="227"
+			y="214"
+			width="60"
+			height="60"
+			min_value="0"
+			max_value="100"
+			value="28"
+			rotation="135"
+			bg_start_angle="0"
+			bg_end_angle="270"
+			mode="normal"
+		>
+			<style name="meter_track" selector="main" />
+			<style name="meter_flash" selector="indicator" />
+			<style name="meter_knob_hidden" selector="knob" />
+		</lv_arc>
+
+		<!-- FLASH PERCENT -->
+		<lv_label
+			x="226"
+			y="230"
+			width="62"
+			height="22"
+			text="28%"
+			style_text_font="be_semibold_16"
+			style_text_align="center"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- FLASH DETAIL -->
+		<lv_label
+			x="214"
+			y="279"
+			width="86"
+			height="17"
+			text="1.8 MB"
+			style_text_font="be_medium_11"
+			style_text_align="center"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- ========================= -->
+		<!-- NETWORK CARD - UPDATED -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="314"
+			y="182"
+			width="156"
+			height="118"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="12"
+			style_pad_all="0"
+		/>
+
+		<!-- NETWORK ICON -->
+		<lv_image x="325" y="192" width="18" height="18" src="home_icon_network" />
+
+		<!-- NETWORK TITLE -->
+		<lv_label
+			x="349"
+			y="190"
+			width="110"
+			height="19"
+			text="Lưu lượng mạng"
+			style_text_font="be_semibold_12"
+			style_text_color="0xffffff"
+		/>
+
+		<!-- LIVE DOT -->
+		<lv_obj
+			x="326"
+			y="220"
+			width="5"
+			height="5"
+			style_bg_color="0x34d399"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="3"
+			style_pad_all="0"
+		/>
+
+		<!-- LIVE TEXT -->
+		<lv_label
+			x="337"
+			y="214"
+			width="85"
+			height="18"
+			text="Trực tiếp"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- NETWORK DIVIDER -->
+		<lv_obj
+			x="326"
+			y="235"
+			width="132"
+			height="1"
+			style_bg_color="0x334155"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- DOWNLOAD LABEL -->
+		<lv_label
+			x="326"
+			y="243"
+			width="66"
+			height="17"
+			text="Tải xuống"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- DOWNLOAD SPEED -->
+		<lv_label
+			x="326"
+			y="261"
+			width="69"
+			height="20"
+			text="125 KB/s"
+			style_text_font="be_semibold_12"
+			style_text_color="0xff6464"
+		/>
+
+		<!-- CENTER VERTICAL DIVIDER -->
+		<lv_obj
+			x="397"
+			y="245"
+			width="1"
+			height="38"
+			style_bg_color="0x334155"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- UPLOAD LABEL -->
+		<lv_label
+			x="405"
+			y="243"
+			width="53"
+			height="17"
+			text="Tải lên"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- UPLOAD SPEED -->
+		<lv_label
+			x="405"
+			y="261"
+			width="53"
+			height="20"
+			text="42 KB/s"
+			style_text_font="be_semibold_12"
+			style_text_color="0x34d399"
+		/>
+	</view>
+</screen>

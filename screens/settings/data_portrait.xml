@@ -1,0 +1,430 @@
+
+<screen>
+    <styles>
+        <!-- SWITCH MAIN -->
+        <style
+            name="data_switch_main"
+            bg_color="0x344256"
+            bg_opa="100%"
+            radius="999"
+            pad_all="3"
+            border_width="0"
+        />
+
+        <!-- SWITCH ACTIVE -->
+        <style
+            name="data_switch_checked"
+            bg_color="0xa52a26"
+            bg_opa="100%"
+            radius="999"
+        />
+
+        <!-- SWITCH KNOB -->
+        <style
+            name="data_switch_knob"
+            bg_color="0xffffff"
+            bg_opa="100%"
+            radius="999"
+            pad_all="0"
+            border_width="0"
+            shadow_color="0x000000"
+            shadow_opa="25%"
+            shadow_width="4"
+        />
+    </styles>
+
+    <view
+        width="320"
+        height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="12"
+            width="36" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="18" y="18"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="58" y="9"
+            width="247" height="28"
+            text="Dữ liệu và dịch vụ"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="59" y="36"
+            width="238" height="17"
+            text="NAS, API và đồng bộ dữ liệu"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="59"
+            width="296" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- ===================== -->
+        <!-- NAS SECTION -->
+        <!-- ===================== -->
+
+        <lv_label
+            x="13" y="68"
+            width="228" height="19"
+            text="KẾT NỐI NAS"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="91"
+            width="296" height="92"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- NAS ICON BACKGROUND -->
+
+        <lv_obj
+            x="22" y="102"
+            width="38" height="38"
+            style_bg_color="0x213247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="27" y="107"
+            width="28" height="28"
+            src="boot_icon_nas"
+        />
+
+        <!-- NAS INFORMATION -->
+
+        <lv_label
+            x="69" y="100"
+            width="177" height="21"
+            text="XomCoding NAS"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="69" y="122"
+            width="177" height="18"
+            text="192.168.1.100"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- NAS STATUS -->
+
+        <lv_obj
+            x="258" y="110"
+            width="7" height="7"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="269" y="104"
+            width="27" height="18"
+            text="OK"
+            style_text_font="be_medium_11"
+            style_text_color="0x34d399"
+        />
+
+        <!-- NAS SEPARATOR -->
+
+        <lv_obj
+            x="22" y="147"
+            width="274" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- NAS SETTINGS -->
+
+        <lv_label
+            x="24" y="157"
+            width="224" height="19"
+            text="Cấu hình máy chủ NAS"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_image
+            x="272" y="154"
+            width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ===================== -->
+        <!-- API SECTION -->
+        <!-- ===================== -->
+
+        <lv_label
+            x="13" y="190"
+            width="230" height="19"
+            text="API VÀ DỊCH VỤ"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="211"
+            width="296" height="85"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- API MAIN ROW -->
+
+        <lv_label
+            x="24" y="218"
+            width="194" height="20"
+            text="Kết nối API"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="24" y="238"
+            width="194" height="17"
+            text="Dữ liệu từ máy chủ"
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_switch
+            name="data_api_enabled"
+            x="252" y="225"
+            width="43" height="23"
+            checked="true"
+        >
+            <style
+                name="data_switch_main"
+                selector="main"
+            />
+            <style
+                name="data_switch_checked"
+                selector="indicator|checked"
+            />
+            <style
+                name="data_switch_knob"
+                selector="knob"
+            />
+        </lv_switch>
+
+        <!-- API SEPARATOR -->
+
+        <lv_obj
+            x="24" y="261"
+            width="272" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- API CONFIGURATION -->
+
+        <lv_label
+            x="24" y="270"
+            width="225" height="19"
+            text="Cấu hình API và Token"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_image
+            x="272" y="267"
+            width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ===================== -->
+        <!-- SYNC SECTION -->
+        <!-- ===================== -->
+
+        <lv_label
+            x="13" y="302"
+            width="230" height="19"
+            text="ĐỒNG BỘ DỮ LIỆU"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="322"
+            width="296" height="82"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- AUTOMATIC SYNC -->
+
+        <lv_label
+            x="24" y="333"
+            width="187" height="20"
+            text="Tự động đồng bộ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_switch
+            name="data_auto_sync"
+            x="252" y="330"
+            width="43" height="23"
+            checked="true"
+        >
+            <style
+                name="data_switch_main"
+                selector="main"
+            />
+            <style
+                name="data_switch_checked"
+                selector="indicator|checked"
+            />
+            <style
+                name="data_switch_knob"
+                selector="knob"
+            />
+        </lv_switch>
+
+        <!-- SYNC SEPARATOR -->
+
+        <lv_obj
+            x="24" y="361"
+            width="272" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- SYNC INTERVAL -->
+
+        <lv_label
+            x="24" y="373"
+            width="166" height="19"
+            text="Chu kỳ đồng bộ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="196" y="373"
+            width="76" height="19"
+            text="30 giây"
+            style_text_font="be_medium_12"
+            style_text_align="right"
+            style_text_color="0xe28d88"
+        />
+
+        <lv_image
+            x="273" y="370"
+            width="24" height="24"
+            src="ui_next"
+        />
+
+        <!-- ===================== -->
+        <!-- SERVICE STATUS -->
+        <!-- ===================== -->
+
+        <lv_obj
+            x="12" y="411"
+            width="296" height="20"
+            style_bg_color="0x121f2d"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="7"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="418"
+            width="6" height="6"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="35" y="412"
+            width="261" height="18"
+            text="Dịch vụ đang hoạt động"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- ===================== -->
+        <!-- SAVE BUTTON -->
+        <!-- ===================== -->
+
+        <lv_button
+            name="btn_data_save"
+            x="12" y="439"
+            width="296" height="31"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu cài đặt dữ liệu"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

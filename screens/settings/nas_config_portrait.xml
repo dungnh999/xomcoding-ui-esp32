@@ -1,0 +1,335 @@
+
+<screen>
+    <view
+        width="320"
+        height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj
+            x="12" y="12" width="36" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="18" y="18"
+            width="24" height="24"
+            src="ui_back"
+        />
+
+        <lv_label
+            x="58" y="9" width="247" height="28"
+            text="Cấu hình NAS"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="59" y="36" width="238" height="17"
+            text="Kết nối máy chủ lưu trữ"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="59" width="296" height="1"
+            style_bg_color="0x29394d"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- NAS STATUS -->
+
+        <lv_obj
+            x="12" y="68" width="296" height="62"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="79" width="38" height="38"
+            style_bg_color="0x213247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="27" y="84" width="28" height="28"
+            src="boot_icon_nas"
+        />
+
+        <lv_label
+            x="69" y="76" width="166" height="20"
+            text="XomCoding NAS"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="69" y="99" width="165" height="18"
+            text="192.168.1.100"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="254" y="91" width="7" height="7"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="267" y="86" width="29" height="18"
+            text="OK"
+            style_text_font="be_medium_11"
+            style_text_color="0x34d399"
+        />
+
+        <!-- CONNECTION SETTINGS -->
+
+        <lv_label
+            x="13" y="138" width="250" height="19"
+            text="THÔNG TIN KẾT NỐI"
+            style_text_font="be_semibold_12"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="12" y="160" width="296" height="211"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="11"
+            style_pad_all="0"
+        />
+
+        <!-- HOST -->
+
+        <lv_label
+            x="24" y="168" width="207" height="18"
+            text="Địa chỉ máy chủ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_textarea
+            name="nas_config_host"
+            x="24" y="188" width="272" height="31"
+            text="192.168.1.100"
+            style_text_font="be_medium_12"
+            style_text_color="0xffffff"
+            style_bg_color="0x0f1b2a"
+            style_bg_opa="100%"
+            style_border_color="0x70403d"
+            style_border_width="1"
+            style_radius="8"
+            style_pad_left="10"
+            style_pad_right="10"
+            style_pad_top="5"
+            style_pad_bottom="0"
+        />
+
+        <!-- PORT -->
+
+        <lv_label
+            x="24" y="225" width="125" height="18"
+            text="Cổng kết nối"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_textarea
+            name="nas_config_port"
+            x="24" y="245" width="107" height="31"
+            text="5001"
+            style_text_font="be_medium_12"
+            style_text_color="0xffffff"
+            style_bg_color="0x0f1b2a"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="8"
+            style_pad_left="10"
+            style_pad_right="8"
+            style_pad_top="5"
+            style_pad_bottom="0"
+        />
+
+        <!-- PROTOCOL -->
+
+        <lv_label
+            x="146" y="225" width="150" height="18"
+            text="Giao thức"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_button
+            name="nas_config_http"
+            x="146" y="245" width="68" height="31"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="HTTP"
+                style_text_font="be_medium_12"
+                style_text_color="0x94a3b8"
+            />
+        </lv_button>
+
+        <lv_button
+            name="nas_config_https"
+            x="219" y="245" width="77" height="31"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="HTTPS"
+                style_text_font="be_semibold_12"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+        <!-- API TOKEN -->
+
+        <lv_label
+            x="24" y="283" width="209" height="18"
+            text="API Token"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_textarea
+            name="nas_config_token"
+            x="24" y="303" width="272" height="31"
+            text=""
+            style_text_font="be_medium_12"
+            style_text_color="0xffffff"
+            style_bg_color="0x0f1b2a"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="8"
+            style_pad_left="10"
+            style_pad_right="10"
+            style_pad_top="5"
+            style_pad_bottom="0"
+        />
+
+        <lv_label
+            x="24" y="343" width="272" height="18"
+            text="Dùng token của dịch vụ NAS/API."
+            style_text_font="be_medium_10"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- STATUS -->
+
+        <lv_obj
+            x="12" y="380" width="296" height="44"
+            style_bg_color="0x121f2d"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="9"
+            style_pad_all="0"
+        />
+
+        <lv_obj
+            x="22" y="391" width="7" height="7"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="35" y="385" width="261" height="18"
+            text="Trạng thái kết nối"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="35" y="404" width="261" height="16"
+            text="Máy chủ phản hồi bình thường"
+            style_text_font="be_medium_10"
+            style_text_color="0x34d399"
+        />
+
+        <!-- TEST CONNECTION -->
+
+        <lv_button
+            name="nas_config_test"
+            x="12" y="434" width="140" height="36"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Kiểm tra"
+                style_text_font="be_semibold_14"
+                style_text_color="0xe2e8f0"
+            />
+        </lv_button>
+
+        <!-- SAVE -->
+
+        <lv_button
+            name="nas_config_save"
+            x="160" y="434" width="148" height="36"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu cấu hình"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

@@ -1,0 +1,349 @@
+
+<screen>
+    <styles>
+        <!-- BRIGHTNESS SLIDER -->
+        <style
+            name="display_land_slider_main"
+            bg_color="0x29394d"
+            bg_opa="100%"
+            radius="999"
+            border_width="0"
+            pad_all="0"
+        />
+        <style
+            name="display_land_slider_indicator"
+            bg_color="0xa52a26"
+            bg_opa="100%"
+            radius="999"
+        />
+        <style
+            name="display_land_slider_knob"
+            bg_color="0xffffff"
+            bg_opa="100%"
+            radius="999"
+            pad_all="5"
+            border_width="1"
+            border_color="0xd1d5db"
+            shadow_color="0x000000"
+            shadow_opa="30%"
+            shadow_width="5"
+        />
+
+        <!-- TOUCH FEEDBACK SWITCH -->
+        <style
+            name="display_land_switch_main"
+            bg_color="0x344256"
+            bg_opa="100%"
+            radius="999"
+            pad_all="3"
+            border_width="0"
+        />
+        <style
+            name="display_land_switch_checked"
+            bg_color="0xa52a26"
+            bg_opa="100%"
+            radius="999"
+        />
+        <style
+            name="display_land_switch_knob"
+            bg_color="0xffffff"
+            bg_opa="100%"
+            radius="999"
+            pad_all="0"
+            border_width="0"
+            shadow_color="0x000000"
+            shadow_opa="25%"
+            shadow_width="4"
+        />
+    </styles>
+
+    <view
+        width="480"
+        height="320"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- HEADER -->
+
+        <lv_obj x="12" y="9" width="34" height="34"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="9"
+                style_pad_all="0" />
+
+        <lv_image x="17" y="14" width="24" height="24"
+                  src="ui_back" />
+
+        <lv_label x="56" y="5" width="270" height="28"
+                  text="Màn hình"
+                  style_text_font="be_semibold_20"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="57" y="32" width="280" height="17"
+                  text="Hiển thị và giao diện"
+                  style_text_font="be_medium_11"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="53" width="456" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <!-- LEFT COLUMN: BRIGHTNESS -->
+
+        <lv_label x="13" y="61" width="211" height="19"
+                  text="ĐỘ SÁNG"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="84" width="220" height="94"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="11"
+                style_pad_all="0" />
+
+        <lv_label x="22" y="94" width="152" height="19"
+                  text="Độ sáng màn hình"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <lv_label
+            name="label_brightness_landscape"
+            x="177" y="94" width="44" height="19"
+            text="75%"
+            style_text_font="be_semibold_12"
+            style_text_align="right"
+            style_text_color="0xe28d88" />
+
+        <!-- REAL BRIGHTNESS SLIDER -->
+
+        <lv_slider
+            name="slider_display_brightness_landscape"
+            x="30" y="136"
+            width="185" height="8"
+            min_value="0"
+            max_value="100"
+            value="75"
+        >
+            <style
+                name="display_land_slider_main"
+                selector="main"
+            />
+            <style
+                name="display_land_slider_indicator"
+                selector="indicator"
+            />
+            <style
+                name="display_land_slider_knob"
+                selector="knob"
+            />
+        </lv_slider>
+
+        <lv_label x="22" y="154" width="84" height="16"
+                  text="Thấp"
+                  style_text_font="be_medium_10"
+                  style_text_color="0x94a3b8" />
+
+        <lv_label x="145" y="154" width="76" height="16"
+                  text="Cao"
+                  style_text_font="be_medium_10"
+                  style_text_align="right"
+                  style_text_color="0x94a3b8" />
+
+        <!-- LEFT COLUMN: ORIENTATION -->
+
+        <lv_label x="13" y="187" width="211" height="19"
+                  text="HƯỚNG MÀN HÌNH"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="12" y="210" width="220" height="49"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="11"
+                style_pad_all="0" />
+
+        <lv_label x="22" y="225" width="65" height="19"
+                  text="Xoay"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <lv_button
+            name="btn_display_portrait_landscape"
+            x="94" y="219" width="59" height="31"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label align="center"
+                      text="Dọc"
+                      style_text_font="be_medium_12"
+                      style_text_color="0x94a3b8" />
+        </lv_button>
+
+        <lv_button
+            name="btn_display_landscape_landscape"
+            x="158" y="219" width="64" height="31"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label align="center"
+                      text="Ngang"
+                      style_text_font="be_semibold_12"
+                      style_text_color="0xffffff" />
+        </lv_button>
+
+        <!-- RIGHT COLUMN: THEME -->
+
+        <lv_label x="241" y="61" width="211" height="19"
+                  text="GIAO DIỆN"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="240" y="84" width="228" height="49"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="11"
+                style_pad_all="0" />
+
+        <lv_label x="251" y="99" width="78" height="19"
+                  text="Chế độ màu"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <lv_button
+            name="btn_theme_dark_landscape"
+            x="335" y="93" width="59" height="31"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label align="center"
+                      text="Tối"
+                      style_text_font="be_semibold_12"
+                      style_text_color="0xffffff" />
+        </lv_button>
+
+        <lv_button
+            name="btn_theme_light_landscape"
+            x="399" y="93" width="59" height="31"
+            style_bg_color="0x233247"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="8"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label align="center"
+                      text="Sáng"
+                      style_text_font="be_medium_12"
+                      style_text_color="0x94a3b8" />
+        </lv_button>
+
+        <!-- RIGHT COLUMN: SCREEN TIMEOUT -->
+
+        <lv_label x="241" y="141" width="211" height="19"
+                  text="TÙY CHỌN KHÁC"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0x94a3b8" />
+
+        <lv_obj x="240" y="164" width="228" height="95"
+                style_bg_color="0x172332"
+                style_bg_opa="100%"
+                style_border_color="0x29394d"
+                style_border_width="1"
+                style_radius="11"
+                style_pad_all="0" />
+
+        <lv_label x="251" y="177" width="138" height="19"
+                  text="Tự tắt màn hình"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <lv_label x="391" y="177" width="48" height="19"
+                  text="5 phút"
+                  style_text_font="be_medium_11"
+                  style_text_align="right"
+                  style_text_color="0xe28d88" />
+
+        <lv_image x="438" y="174"
+                  width="24" height="24"
+                  src="ui_next" />
+
+        <lv_obj x="251" y="207" width="206" height="1"
+                style_bg_color="0x29394d"
+                style_bg_opa="100%"
+                style_border_width="0"
+                style_pad_all="0" />
+
+        <lv_label x="251" y="223" width="164" height="19"
+                  text="Phản hồi cảm ứng"
+                  style_text_font="be_semibold_12"
+                  style_text_color="0xffffff" />
+
+        <!-- REAL STYLED SWITCH -->
+
+        <lv_switch
+            name="display_touch_feedback_landscape"
+            x="415" y="220" width="43" height="23"
+            checked="true"
+        >
+            <style
+                name="display_land_switch_main"
+                selector="main"
+            />
+            <style
+                name="display_land_switch_checked"
+                selector="indicator|checked"
+            />
+            <style
+                name="display_land_switch_knob"
+                selector="knob"
+            />
+        </lv_switch>
+
+        <!-- BOTTOM SAVE BUTTON -->
+
+        <lv_button
+            name="btn_display_save_landscape"
+            x="12" y="270" width="456" height="38"
+            style_bg_color="0xa52a26"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="10"
+            style_shadow_width="0"
+            style_pad_all="0"
+        >
+            <lv_label
+                align="center"
+                text="Lưu cài đặt màn hình"
+                style_text_font="be_semibold_14"
+                style_text_color="0xffffff"
+            />
+        </lv_button>
+
+    </view>
+</screen>

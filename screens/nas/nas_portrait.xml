@@ -1,0 +1,434 @@
+
+<screen>
+    <view
+        width="320"
+        height="480"
+        style_bg_color="0x0b111b"
+        style_bg_opa="100%"
+        style_border_width="0"
+        style_radius="0"
+        style_pad_all="0"
+    >
+
+        <!-- ========================= -->
+        <!-- HEADER -->
+        <!-- ========================= -->
+
+        <lv_label
+            x="12" y="9"
+            width="210" height="25"
+            text="Synology NAS"
+            style_text_font="be_semibold_20"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="13" y="34"
+            width="200" height="18"
+            text="Chi tiết thiết bị"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="239" y="20"
+            width="6" height="6"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="250" y="14"
+            width="58" height="19"
+            text="Online"
+            style_text_font="be_medium_12"
+            style_text_align="right"
+            style_text_color="0x34d399"
+        />
+
+        <lv_obj
+            x="12" y="56"
+            width="296" height="1"
+            style_bg_color="0x273345"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- ========================= -->
+        <!-- DEVICE INFORMATION -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="65"
+            width="296" height="93"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="12"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="24" y="85"
+            width="26" height="26"
+            src="boot_icon_nas"
+        />
+
+        <lv_label
+            x="58" y="76"
+            width="208" height="22"
+            text="DiskStation DS920+"
+            style_text_font="be_semibold_14"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="58" y="98"
+            width="220" height="18"
+            text="Synology DSM · 7.2"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <lv_obj
+            x="24" y="122"
+            width="272" height="1"
+            style_bg_color="0x334155"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <lv_label
+            x="24" y="132"
+            width="125" height="17"
+            text="192.168.1.100"
+            style_text_font="be_medium_11"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_label
+            x="165" y="132"
+            width="131" height="17"
+            text="Uptime: 12 ngày"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- ========================= -->
+        <!-- NAS CPU CARD -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="166"
+            width="144" height="111"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="12"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="23" y="177"
+            width="16" height="16"
+            src="home_icon_cpu"
+        />
+
+        <lv_label
+            x="45" y="174"
+            width="96" height="18"
+            text="CPU NAS"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_arc
+            x="53" y="195"
+            width="62" height="62"
+            min_value="0"
+            max_value="100"
+            value="24"
+            rotation="135"
+            bg_start_angle="0"
+            bg_end_angle="270"
+            mode="normal"
+        >
+            <style name="meter_track" selector="main"/>
+            <style name="meter_cpu" selector="indicator"/>
+            <style name="meter_knob_hidden" selector="knob"/>
+        </lv_arc>
+
+        <lv_label
+            x="53" y="213"
+            width="62" height="22"
+            text="24%"
+            style_text_font="be_semibold_16"
+            style_text_align="center"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="23" y="255"
+            width="122" height="16"
+            text="42°C · Bình thường"
+            style_text_font="be_medium_10"
+            style_text_align="center"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- ========================= -->
+        <!-- NAS RAM CARD -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="164" y="166"
+            width="144" height="111"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="12"
+            style_pad_all="0"
+        />
+
+        <lv_image
+            x="175" y="177"
+            width="16" height="16"
+            src="home_icon_ram"
+        />
+
+        <lv_label
+            x="197" y="174"
+            width="98" height="18"
+            text="RAM NAS"
+            style_text_font="be_semibold_12"
+            style_text_color="0xe2e8f0"
+        />
+
+        <lv_arc
+            x="205" y="195"
+            width="62" height="62"
+            min_value="0"
+            max_value="100"
+            value="46"
+            rotation="135"
+            bg_start_angle="0"
+            bg_end_angle="270"
+            mode="normal"
+        >
+            <style name="meter_track" selector="main"/>
+            <style name="meter_ram" selector="indicator"/>
+            <style name="meter_knob_hidden" selector="knob"/>
+        </lv_arc>
+
+        <lv_label
+            x="205" y="213"
+            width="62" height="22"
+            text="46%"
+            style_text_font="be_semibold_16"
+            style_text_align="center"
+            style_text_color="0xffffff"
+        />
+
+        <lv_label
+            x="175" y="255"
+            width="122" height="16"
+            text="1.8 GB / 4 GB"
+            style_text_font="be_medium_10"
+            style_text_align="center"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- ========================= -->
+        <!-- STORAGE CARD - UPDATED -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="285"
+            width="296" height="93"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="12"
+            style_pad_all="0"
+        />
+
+        <!-- STORAGE ICON -->
+        <lv_image
+            x="24" y="295"
+            width="18" height="18"
+            src="home_icon_storage"
+        />
+
+        <!-- STORAGE TITLE -->
+        <lv_label
+            x="49" y="292"
+            width="158" height="20"
+            text="Dung lượng lưu trữ"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <!-- STORAGE PERCENT -->
+        <lv_label
+            x="227" y="295"
+            width="69" height="20"
+            text="30%"
+            style_text_font="be_semibold_12"
+            style_text_align="right"
+            style_text_color="0xff6464"
+        />
+
+        <!-- VOLUME NAME -->
+        <lv_label
+            x="24" y="318"
+            width="125" height="17"
+            text="Volume 1"
+            style_text_font="be_medium_11"
+            style_text_color="0xe2e8f0"
+        />
+
+        <!-- USED / TOTAL -->
+        <lv_label
+            x="149" y="318"
+            width="147" height="17"
+            text="3.6 TB / 12 TB"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- STORAGE TRACK -->
+        <lv_obj
+            x="24" y="340"
+            width="272" height="7"
+            style_bg_color="0x344256"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <!-- STORAGE FILL - 30% -->
+        <lv_obj
+            x="24" y="340"
+            width="82" height="7"
+            style_bg_color="0xff6464"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="4"
+            style_pad_all="0"
+        />
+
+        <!-- STORAGE STATUS -->
+        <lv_label
+            x="24" y="353"
+            width="272" height="16"
+            text="SHR · Trạng thái: Bình thường"
+            style_text_font="be_medium_10"
+            style_text_color="0x34d399"
+        />
+
+        <!-- ========================= -->
+        <!-- NAS STATUS CARD -->
+        <!-- ========================= -->
+
+        <lv_obj
+            x="12" y="386"
+            width="296" height="84"
+            style_bg_color="0x172332"
+            style_bg_opa="100%"
+            style_border_color="0x29394d"
+            style_border_width="1"
+            style_radius="12"
+            style_pad_all="0"
+        />
+
+        <!-- STATUS TITLE -->
+        <lv_label
+            x="24" y="397"
+            width="174" height="20"
+            text="Trạng thái hệ thống"
+            style_text_font="be_semibold_12"
+            style_text_color="0xffffff"
+        />
+
+        <!-- HEALTH DOT -->
+        <lv_obj
+            x="262" y="404"
+            width="5" height="5"
+            style_bg_color="0x34d399"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_radius="3"
+            style_pad_all="0"
+        />
+
+        <!-- HEALTH STATUS -->
+        <lv_label
+            x="272" y="397"
+            width="24" height="18"
+            text="OK"
+            style_text_font="be_medium_11"
+            style_text_color="0x34d399"
+        />
+
+        <!-- DIVIDER -->
+        <lv_obj
+            x="24" y="422"
+            width="272" height="1"
+            style_bg_color="0x334155"
+            style_bg_opa="100%"
+            style_border_width="0"
+            style_pad_all="0"
+        />
+
+        <!-- DISK TEMPERATURE LABEL -->
+        <lv_label
+            x="24" y="430"
+            width="110" height="17"
+            text="Nhiệt độ ổ đĩa"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- DISK TEMPERATURE -->
+        <lv_label
+            x="227" y="430"
+            width="69" height="17"
+            text="38°C"
+            style_text_font="be_semibold_12"
+            style_text_align="right"
+            style_text_color="0xffffff"
+        />
+
+        <!-- DISK HEALTH LABEL -->
+        <lv_label
+            x="24" y="450"
+            width="145" height="17"
+            text="Tất cả ổ đĩa khỏe"
+            style_text_font="be_medium_11"
+            style_text_color="0x94a3b8"
+        />
+
+        <!-- DISK HEALTH VALUE -->
+        <lv_label
+            x="231" y="450"
+            width="65" height="17"
+            text="Tốt"
+            style_text_font="be_medium_11"
+            style_text_align="right"
+            style_text_color="0x34d399"
+        />
+
+    </view>
+</screen>

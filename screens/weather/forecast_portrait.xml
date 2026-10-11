@@ -1,0 +1,775 @@
+<screen>
+	<view
+		width="320"
+		height="480"
+		style_bg_color="0x0b111b"
+		style_bg_opa="100%"
+		style_border_width="0"
+		style_radius="0"
+		style_pad_all="0"
+	>
+		<!-- ========================= -->
+		<!-- HEADER -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="12"
+			y="12"
+			width="36"
+			height="36"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="10"
+			style_pad_all="0"
+		/>
+
+		<lv_image x="18" y="18" width="24" height="24" src="ui_back" />
+
+		<lv_label
+			x="58"
+			y="9"
+			width="175"
+			height="27"
+			text="Dự báo 5 ngày"
+			style_text_font="be_semibold_20"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="59"
+			y="36"
+			width="155"
+			height="17"
+			text="Hà Nội · 25-29/05"
+			style_text_font="be_medium_11"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- TEMPERATURE UNIT -->
+
+		<lv_obj
+			x="253"
+			y="18"
+			width="55"
+			height="27"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="9"
+			style_pad_all="0"
+		/>
+
+		<lv_obj
+			x="256"
+			y="21"
+			width="24"
+			height="21"
+			style_bg_color="0xa52a26"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_radius="7"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="256"
+			y="20"
+			width="24"
+			height="17"
+			text="°C"
+			style_text_font="be_semibold_12"
+			style_text_align="center"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="281"
+			y="21"
+			width="24"
+			height="17"
+			text="°F"
+			style_text_font="be_medium_11"
+			style_text_align="center"
+			style_text_color="0x94a3b8"
+		/>
+
+		<!-- NEUTRAL HEADER DIVIDER -->
+
+		<lv_obj
+			x="12"
+			y="59"
+			width="296"
+			height="1"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- ========================= -->
+		<!-- DAY 1 - CLOUDY -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="12"
+			y="66"
+			width="296"
+			height="66"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x70403d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="22"
+			y="76"
+			width="35"
+			height="20"
+			text="CN"
+			style_text_font="be_semibold_16"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="22"
+			y="100"
+			width="44"
+			height="16"
+			text="25/05"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_image x="66" y="83" width="32" height="32" src="forecast_cloudy" />
+
+		<lv_label
+			x="105"
+			y="76"
+			width="101"
+			height="18"
+			text="Có mây"
+			style_text_font="be_medium_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="105"
+			y="100"
+			width="49"
+			height="24"
+			text="31°"
+			style_text_font="be_semibold_16"
+			style_text_color="0xfb7185"
+		/>
+
+		<lv_label
+			x="149"
+			y="100"
+			width="55"
+			height="24"
+			text="/ 24°"
+			style_text_font="be_semibold_16"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_obj
+			x="209"
+			y="75"
+			width="1"
+			height="48"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="219"
+			y="76"
+			width="79"
+			height="16"
+			text="Mưa 35%"
+			style_text_font="be_medium_11"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_label
+			x="219"
+			y="94"
+			width="79"
+			height="16"
+			text="0.8 mm"
+			style_text_font="be_medium_11"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="219"
+			y="112"
+			width="79"
+			height="16"
+			text="Gió 10 km/h"
+			style_text_font="be_medium_10"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- ========================= -->
+		<!-- DAY 2 - LIGHT RAIN -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="12"
+			y="136"
+			width="296"
+			height="66"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="22"
+			y="146"
+			width="35"
+			height="20"
+			text="T2"
+			style_text_font="be_semibold_16"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="22"
+			y="170"
+			width="44"
+			height="16"
+			text="26/05"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_image x="66" y="153" width="32" height="32" src="forecast_rain" />
+
+		<lv_label
+			x="105"
+			y="146"
+			width="101"
+			height="18"
+			text="Mưa nhẹ"
+			style_text_font="be_medium_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="105"
+			y="170"
+			width="49"
+			height="24"
+			text="29°"
+			style_text_font="be_semibold_16"
+			style_text_color="0xfb7185"
+		/>
+
+		<lv_label
+			x="149"
+			y="170"
+			width="55"
+			height="24"
+			text="/ 23°"
+			style_text_font="be_semibold_16"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_obj
+			x="209"
+			y="145"
+			width="1"
+			height="48"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="219"
+			y="146"
+			width="79"
+			height="16"
+			text="Mưa 70%"
+			style_text_font="be_medium_11"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_label
+			x="219"
+			y="164"
+			width="79"
+			height="16"
+			text="4.2 mm"
+			style_text_font="be_medium_11"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="219"
+			y="182"
+			width="79"
+			height="16"
+			text="Gió 12 km/h"
+			style_text_font="be_medium_10"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- ========================= -->
+		<!-- DAY 3 - SUNNY -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="12"
+			y="206"
+			width="296"
+			height="66"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="22"
+			y="216"
+			width="35"
+			height="20"
+			text="T3"
+			style_text_font="be_semibold_16"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="22"
+			y="240"
+			width="44"
+			height="16"
+			text="27/05"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_image x="66" y="223" width="32" height="32" src="forecast_sun" />
+
+		<lv_label
+			x="105"
+			y="216"
+			width="101"
+			height="18"
+			text="Có nắng"
+			style_text_font="be_medium_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="105"
+			y="240"
+			width="49"
+			height="24"
+			text="32°"
+			style_text_font="be_semibold_16"
+			style_text_color="0xfb7185"
+		/>
+
+		<lv_label
+			x="149"
+			y="240"
+			width="55"
+			height="24"
+			text="/ 25°"
+			style_text_font="be_semibold_16"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_obj
+			x="209"
+			y="215"
+			width="1"
+			height="48"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="219"
+			y="216"
+			width="79"
+			height="16"
+			text="Mưa 15%"
+			style_text_font="be_medium_11"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_label
+			x="219"
+			y="234"
+			width="79"
+			height="16"
+			text="0.0 mm"
+			style_text_font="be_medium_11"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="219"
+			y="252"
+			width="79"
+			height="16"
+			text="Gió 8 km/h"
+			style_text_font="be_medium_10"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- ========================= -->
+		<!-- DAY 4 - HEAVY RAIN -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="12"
+			y="276"
+			width="296"
+			height="66"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="22"
+			y="286"
+			width="35"
+			height="20"
+			text="T4"
+			style_text_font="be_semibold_16"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="22"
+			y="310"
+			width="44"
+			height="16"
+			text="28/05"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_image x="66" y="293" width="32" height="32" src="forecast_heavy_rain" />
+
+		<lv_label
+			x="105"
+			y="286"
+			width="101"
+			height="18"
+			text="Mưa rào"
+			style_text_font="be_medium_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="105"
+			y="310"
+			width="49"
+			height="24"
+			text="28°"
+			style_text_font="be_semibold_16"
+			style_text_color="0xfb7185"
+		/>
+
+		<lv_label
+			x="149"
+			y="310"
+			width="55"
+			height="24"
+			text="/ 23°"
+			style_text_font="be_semibold_16"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_obj
+			x="209"
+			y="285"
+			width="1"
+			height="48"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="219"
+			y="286"
+			width="79"
+			height="16"
+			text="Mưa 80%"
+			style_text_font="be_medium_11"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_label
+			x="219"
+			y="304"
+			width="79"
+			height="16"
+			text="12.6 mm"
+			style_text_font="be_medium_11"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="219"
+			y="322"
+			width="79"
+			height="16"
+			text="Gió 15 km/h"
+			style_text_font="be_medium_10"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- ========================= -->
+		<!-- DAY 5 - PARTLY CLOUDY -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="12"
+			y="346"
+			width="296"
+			height="66"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="22"
+			y="356"
+			width="35"
+			height="20"
+			text="T5"
+			style_text_font="be_semibold_16"
+			style_text_color="0xffffff"
+		/>
+
+		<lv_label
+			x="22"
+			y="380"
+			width="44"
+			height="16"
+			text="29/05"
+			style_text_font="be_medium_10"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_image x="66" y="363" width="32" height="32" src="forecast_cloud_sun" />
+
+		<lv_label
+			x="105"
+			y="356"
+			width="101"
+			height="18"
+			text="Ít mây"
+			style_text_font="be_medium_12"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="105"
+			y="380"
+			width="49"
+			height="24"
+			text="30°"
+			style_text_font="be_semibold_16"
+			style_text_color="0xfb7185"
+		/>
+
+		<lv_label
+			x="149"
+			y="380"
+			width="55"
+			height="24"
+			text="/ 24°"
+			style_text_font="be_semibold_16"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_obj
+			x="209"
+			y="355"
+			width="1"
+			height="48"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			x="219"
+			y="356"
+			width="79"
+			height="16"
+			text="Mưa 40%"
+			style_text_font="be_medium_11"
+			style_text_color="0x38bdf8"
+		/>
+
+		<lv_label
+			x="219"
+			y="374"
+			width="79"
+			height="16"
+			text="1.2 mm"
+			style_text_font="be_medium_11"
+			style_text_color="0xe2e8f0"
+		/>
+
+		<lv_label
+			x="219"
+			y="392"
+			width="79"
+			height="16"
+			text="Gió 10 km/h"
+			style_text_font="be_medium_10"
+			style_text_color="0x34d399"
+		/>
+
+		<!-- ========================= -->
+		<!-- FIVE DAY SUMMARY -->
+		<!-- ========================= -->
+
+		<lv_obj
+			x="12"
+			y="420"
+			width="296"
+			height="50"
+			style_bg_color="0x172332"
+			style_bg_opa="100%"
+			style_border_color="0x29394d"
+			style_border_width="1"
+			style_radius="11"
+			style_pad_all="0"
+		/>
+
+		<!-- COLUMN DIVIDERS -->
+
+		<lv_obj
+			x="110"
+			y="430"
+			width="1"
+			height="30"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_obj
+			x="210"
+			y="430"
+			width="1"
+			height="30"
+			style_bg_color="0x29394d"
+			style_bg_opa="100%"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- AVERAGE TEMPERATURE -->
+
+		<lv_label
+			x="15"
+			y="428"
+			width="92"
+			height="16"
+			text="Nhiệt độ TB"
+			style_text_font="be_medium_10"
+			style_text_align="center"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="15"
+			y="445"
+			width="92"
+			height="18"
+			text="29°C"
+			style_text_font="be_semibold_14"
+			style_text_align="center"
+			style_text_color="0xfb7185"
+		/>
+
+		<!-- TOTAL PRECIPITATION -->
+
+		<lv_label
+			x="113"
+			y="428"
+			width="94"
+			height="16"
+			text="Tổng lượng mưa"
+			style_text_font="be_medium_10"
+			style_text_align="center"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="113"
+			y="445"
+			width="94"
+			height="18"
+			text="18.8 mm"
+			style_text_font="be_semibold_14"
+			style_text_align="center"
+			style_text_color="0x38bdf8"
+		/>
+
+		<!-- AVERAGE WIND -->
+
+		<lv_label
+			x="213"
+			y="428"
+			width="92"
+			height="16"
+			text="Gió TB"
+			style_text_font="be_medium_10"
+			style_text_align="center"
+			style_text_color="0x94a3b8"
+		/>
+
+		<lv_label
+			x="213"
+			y="445"
+			width="92"
+			height="18"
+			text="11 km/h"
+			style_text_font="be_semibold_14"
+			style_text_align="center"
+			style_text_color="0x34d399"
+		/>
+	</view>
+</screen>
